@@ -4307,46 +4307,6 @@
                         "port": 3
                     }
                 ]
-            },
-            {
-                "x": 1102,
-                "y": 318,
-                "wires": [
-                    {
-                        "id": "e834e65d.adb988",
-                        "port": 4
-                    }
-                ]
-            },
-            {
-                "x": 1116,
-                "y": 399,
-                "wires": [
-                    {
-                        "id": "e834e65d.adb988",
-                        "port": 5
-                    }
-                ]
-            },
-            {
-                "x": 1108,
-                "y": 444,
-                "wires": [
-                    {
-                        "id": "e834e65d.adb988",
-                        "port": 6
-                    }
-                ]
-            },
-            {
-                "x": 1006,
-                "y": 489,
-                "wires": [
-                    {
-                        "id": "e834e65d.adb988",
-                        "port": 7
-                    }
-                ]
             }
         ],
         "inputLabels": [
@@ -15414,38 +15374,14 @@
                 "t": "eq",
                 "v": "3",
                 "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "4",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "5",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "6",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "7",
-                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 8,
+        "outputs": 4,
         "x": 825.9869575500488,
         "y": 288.1562738418579,
         "wires": [
-            [],
-            [],
-            [],
-            [],
             [],
             [],
             [],
@@ -15507,8 +15443,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 860,
-        "y": 760,
+        "x": 830,
+        "y": 700,
         "wires": []
     },
     {
@@ -15533,8 +15469,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 870,
-        "y": 720,
+        "x": 840,
+        "y": 660,
         "wires": []
     },
     {
@@ -15556,11 +15492,7 @@
             ],
             [
                 "8666899.c75da78"
-            ],
-            [],
-            [],
-            [],
-            []
+            ]
         ]
     },
     {
@@ -15685,7 +15617,7 @@
         "width": "6",
         "height": "5",
         "gtype": "compass",
-        "title": "La Bàn",
+        "title": "Hướng Gió",
         "label": "NEWS",
         "format": "{{value}}",
         "min": "0",
@@ -15697,8 +15629,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 1120,
-        "y": 540,
+        "x": 1030,
+        "y": 580,
         "wires": []
     },
     {
@@ -15709,8 +15641,8 @@
         "func": "var huong;\nif (msg.payload <= 22.5) {\n    huong = \"Bắc\";\n}\nelse if (msg.payload <= 45) {\n    huong = \"Bắc Đông Bắc\";\n}\nelse if (msg.payload <= 67.5) {\n    huong = \"Đông Bắc\";\n}\nelse if (msg.payload <= 90) {\n    huong = \"Đông Đông Bắc\";\n}\nelse if (msg.payload <= 112.5) {\n    huong = \"Đông \";\n}\nelse if (msg.payload <= 135) {\n    huong = \"Đông Đông Nam\";\n}\nelse if (msg.payload <= 157.5) {\n    huong = \"Đông Nam\";\n}\nelse if (msg.payload <= 180) {\n    huong = \"Nam Đông Nam\";\n}\nelse if (msg.payload <= 202.5) {\n    huong = \"Nam\";\n}\nelse if (msg.payload <= 225) {\n    huong = \"Nam Tây Nam\";\n}\nelse if (msg.payload <= 247.5) {\n    huong = \"Tây Nam\";\n}\nelse if (msg.payload <= 270) {\n    huong = \"Tây Tây Nam\";\n}\nelse if (msg.payload <= 292.5) {\n    huong = \"Tây \";\n}\nelse if (msg.payload <= 315) {\n    huong = \"Tây Tây Bắc\";\n}\nelse if (msg.payload <= 337.5) {\n    huong = \"Tây Bắc\";\n}\nelse if (msg.payload <= 360) {\n    huong = \"Bắc Tây Bắc\";\n}\nelse{\n        huong = \"Bắc\";\n\n}\n\nmsg.payload = huong;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1130,
-        "y": 480,
+        "x": 1050,
+        "y": 520,
         "wires": [
             [
                 "424490e0.5f4f1",
@@ -15730,8 +15662,8 @@
         "label": "Hướng:",
         "format": "{{msg.payload}}",
         "layout": "row-center",
-        "x": 1340,
-        "y": 460,
+        "x": 1240,
+        "y": 520,
         "wires": []
     },
     {
@@ -15744,8 +15676,8 @@
         "console": false,
         "tostatus": false,
         "complete": "payload",
-        "x": 1330,
-        "y": 540,
+        "x": 1250,
+        "y": 560,
         "wires": []
     },
     {
@@ -15760,8 +15692,8 @@
         "label": "Mưa",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 1250,
-        "y": 580,
+        "x": 1170,
+        "y": 600,
         "wires": []
     },
     {
@@ -15772,8 +15704,8 @@
         "func": "var trangthai;\nif (msg.payload == 10) {\n    trangthai=\"Không có mưa\";\n}\nelse\n    trangthai=\"Có mưa\"\n\nmsg.payload = trangthai;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1070,
-        "y": 600,
+        "x": 1000,
+        "y": 620,
         "wires": [
             [
                 "2acb4e1e.beea02",
@@ -15791,7 +15723,7 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 1280,
+        "x": 1170,
         "y": 640,
         "wires": []
     },
@@ -15853,8 +15785,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 450,
-        "y": 520,
+        "x": 90,
+        "y": 580,
         "wires": [
             [
                 "7cd47277.83e6fc"

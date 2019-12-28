@@ -14,14 +14,7 @@
         "info": ""
     },
     {
-        "id": "11027ba2.6a8d54",
-        "type": "tab",
-        "label": "điểm danh",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "d3fd0df1.6e3a9",
+        "id": "f9ca782b.055ff8",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -4259,6 +4252,180 @@
         ]
     },
     {
+        "id": "df28ea3.5589f18",
+        "type": "subflow",
+        "name": "Lấy dữ từ iNut (10)",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "72f5a31c.804c7c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 859.0000343322754,
+                "y": 98.00000190734863,
+                "wires": [
+                    {
+                        "id": "e834e65d.adb988",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 968.0000343322754,
+                "y": 102.00000286102295,
+                "wires": [
+                    {
+                        "id": "e834e65d.adb988",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 1048.9999732971191,
+                "y": 101.00000381469727,
+                "wires": [
+                    {
+                        "id": "e834e65d.adb988",
+                        "port": 2
+                    }
+                ]
+            },
+            {
+                "x": 1059,
+                "y": 253,
+                "wires": [
+                    {
+                        "id": "e834e65d.adb988",
+                        "port": 3
+                    }
+                ]
+            },
+            {
+                "x": 1102,
+                "y": 318,
+                "wires": [
+                    {
+                        "id": "e834e65d.adb988",
+                        "port": 4
+                    }
+                ]
+            },
+            {
+                "x": 1116,
+                "y": 399,
+                "wires": [
+                    {
+                        "id": "e834e65d.adb988",
+                        "port": 5
+                    }
+                ]
+            },
+            {
+                "x": 1108,
+                "y": 444,
+                "wires": [
+                    {
+                        "id": "e834e65d.adb988",
+                        "port": 6
+                    }
+                ]
+            },
+            {
+                "x": 1006,
+                "y": 489,
+                "wires": [
+                    {
+                        "id": "e834e65d.adb988",
+                        "port": 7
+                    }
+                ]
+            }
+        ],
+        "inputLabels": [
+            "Nhận đầu vào MQTT IN từ iNut cảm biến"
+        ],
+        "outputLabels": [
+            "Luồng cảm biến 1",
+            "Luồng cảm biến 2",
+            "Luồng cảm biến 3",
+            "Luồng cảm biến 4",
+            "Luồng cảm biến 5",
+            "Luồng cảm biến 6",
+            "Luồng cảm biến 7",
+            "Luồng cảm biến 8"
+        ]
+    },
+    {
+        "id": "63c2b081.24ab2",
+        "type": "subflow",
+        "name": "Lấy dữ từ iNut (2) (5)",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "94a66be1.304978"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1000,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "e2472481.ea3fb8",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1000,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "e2472481.ea3fb8",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 980,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "e2472481.ea3fb8",
+                        "port": 2
+                    }
+                ]
+            }
+        ],
+        "inputLabels": [
+            "Nhận đầu vào MQTT IN từ iNut cảm biến"
+        ],
+        "outputLabels": [
+            "Luồng cảm biến 1",
+            "Luồng cảm biến 2",
+            "Luồng cảm biến 3",
+            "Luồng cảm biến 4",
+            "Luồng cảm biến 5",
+            "Luồng cảm biến 6",
+            "Luồng cảm biến 7",
+            "Luồng cảm biến 8"
+        ]
+    },
+    {
         "id": "f94cf49c.98f658",
         "type": "ui_base",
         "theme": {
@@ -7486,6 +7653,352 @@
         "order": 4,
         "disabled": false,
         "hidden": false
+    },
+    {
+        "id": "7a0170de.d86fe",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 2",
+        "tab": "6d7e349d.b1bd9c",
+        "order": 2,
+        "disp": false,
+        "width": "25",
+        "collapse": false
+    },
+    {
+        "id": "99a88c14.3a964",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "ba5934b4.2719d8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "6d7e349d.b1bd9c",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Giám sát nhà Nấm",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bcafe0d7.5467",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "6819f574.2879fc",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "81e53aab.24a558",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "7a3fd128.0c947",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "bd875c8c.fe0e8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "4f747312.49c61c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 1",
+        "tab": "8f2f72fc.2918a",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8f2f72fc.2918a",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Giám sát nhiệt độ độ ẩm hướng gió và cảnh báo mưa",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "34294fe9.b032c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "a7d3643a.0235d8",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "6d7e349d.b1bd9c",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "37ede548.f720aa",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 3",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "e2dceee5.e1721",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "65b9df61.abc2f",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "73ae9bea.2424e4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "4b07acba.d6be94",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 2",
+        "tab": "8f2f72fc.2918a",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b40bd119.91e84",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 3",
+        "tab": "8f2f72fc.2918a",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false
     },
     {
         "id": "c19b92a3.72767",
@@ -14737,2095 +15250,6 @@
         ]
     },
     {
-        "id": "b5fb6e35.b736b",
-        "type": "link in",
-        "z": "11027ba2.6a8d54",
-        "name": "Mã thẻ",
-        "links": [
-            "b07bac9e.3735b"
-        ],
-        "x": 215,
-        "y": 400,
-        "wires": [
-            [
-                "8d363b3f.dec7a8",
-                "e9d54b52.9b2ee8"
-            ]
-        ]
-    },
-    {
-        "id": "8d363b3f.dec7a8",
-        "type": "switch",
-        "z": "11027ba2.6a8d54",
-        "name": "diemdanh == 1",
-        "property": "diemdanh",
-        "propertyType": "global",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 320,
-        "y": 300,
-        "wires": [
-            [
-                "e9d54b52.9b2ee8"
-            ]
-        ]
-    },
-    {
-        "id": "2021ba32.b9c536",
-        "type": "change",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "diemdanh",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 500,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a4234e12.c50fe",
-        "type": "ui_switch",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "label": "Điểm danh",
-        "tooltip": "",
-        "group": "113d2fa5.9a774",
-        "order": 1,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "x": 290,
-        "y": 480,
-        "wires": [
-            [
-                "2021ba32.b9c536"
-            ]
-        ]
-    },
-    {
-        "id": "6c32b7d0.f3d0f8",
-        "type": "ui_template",
-        "z": "11027ba2.6a8d54",
-        "group": "6d200976.257078",
-        "name": "updateGlobalData",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "format": "<script>\n\n(function(scope) {\n\n scope.$watch('msg', function (msg) { //watch for an incoming NR msg\n    console.log(updateGlobalData(msg))\n     \n })\n})(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 1350,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "46c1671e.5b3428",
-        "type": "inject",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "topic": "[{\"state\": 0}]",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "x": 530,
-        "y": 740,
-        "wires": [
-            [
-                "b07b3b35.6181e8"
-            ]
-        ]
-    },
-    {
-        "id": "b07b3b35.6181e8",
-        "type": "change",
-        "z": "11027ba2.6a8d54",
-        "name": "Đặt tên thiết bị",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{}",
-                "tot": "json"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump1",
-                "pt": "msg",
-                "to": "Máy bơm 1",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump2",
-                "pt": "msg",
-                "to": "Máy bơm 2",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump3",
-                "pt": "msg",
-                "to": "Máy bơm 3",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump4",
-                "pt": "msg",
-                "to": "Máy bơm 4",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump5",
-                "pt": "msg",
-                "to": "Máy bơm 5",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump6",
-                "pt": "msg",
-                "to": "Máy bơm 6",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump7",
-                "pt": "msg",
-                "to": "Máy bơm 7",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump8",
-                "pt": "msg",
-                "to": "Máy bơm 8",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump9",
-                "pt": "msg",
-                "to": "Máy bơm 9",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump10",
-                "pt": "msg",
-                "to": "Máy bơm 10",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump11",
-                "pt": "msg",
-                "to": "Máy bơm 11",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump12",
-                "pt": "msg",
-                "to": "Máy bơm 12",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump13",
-                "pt": "msg",
-                "to": "Máy bơm 13",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump14",
-                "pt": "msg",
-                "to": "Máy bơm 14",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump15",
-                "pt": "msg",
-                "to": "Máy bơm 15",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.pump16",
-                "pt": "msg",
-                "to": "Máy bơm 16",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 760,
-        "y": 740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f0ecd20c.bcfdd",
-        "type": "ui_template",
-        "z": "11027ba2.6a8d54",
-        "group": "6d200976.257078",
-        "name": "Nhận lệnh",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "format": "\n<script>\n\n\nfunction updateGlobalData(msg) {\n    var i = 0;\n    $(\"svg title\").each(function() {\n    \tvar $this = $(this)\n    \tvar option = $this.html()\n    \tconsole.log(\"svg count\", i++)\n    \ttry {\n        \toption = JSON.parse(option)\n    \t\tconsole.log(option)\n    \t\tvar parent = $this.parent()\n    \t\tvar value\n    \t\tswitch (option.type) {\n    \t\t    case \"title\": {\n    \t\t        //alert(option.id)\n    \t\t        if (option.id) {\n    \t\t            parent.find(\"tspan\").html(msg.payload[option.id])\n    \t\t        }\n     \t\t        break;\n    \t\t    }\n    \t\t    case \"img\": {\n    \t\t        if (option.id) {\n    \t\t            parent.attr(\"xlink:href\", 'data:image/gif;base64,'+msg.payload[option.id])\n    \t\t            //xlink:href=\"\n    \t\t        }\n    \t\t        break;\n    \t\t    }\n    \t\t} \n    \t\tif (value == option.value) {\n    \t\t    parent.show()\n    \t\t} else {\n    \t\t    parent.hide()\n    \t\t}\n    \t} catch(e) {\n    \t\tconsole.log(\"Error\", option, e)\n    \t}\n    })\n}\nfunction updateSvgData(msg) {\n    console.log(\"updateSvgData\", msg)\n    $(\"svg title\").each(function() {\n    \tvar $this = $(this)\n    \tvar option = $this.html()\n    \ttry {\n        \toption = JSON.parse(option)\n    \t\tconsole.log(option)\n    \t\tvar parent = $this.parent()\n    \t\tvar value\n    \t\toption.flow = option.flow || 0\n    \t\toption.bit = option.bit || 0\n    \t\tconsole.log(msg.payload[option.flow].state)\n    \t\tmsg.payload[option.flow].state = parseInt(msg.payload[option.flow].state, 10)\n    \t\tswitch (option.type) {\n    \t\t    case \"bit\": {\n    \t\t        value = msg.payload[option.flow].state\n    \t\t        console.log(\"bit\", option.bit, msg.payload[option.flow].state)\n                    value = (value >> option.bit) & 1\n    \t\t        break;\n    \t\t    }\n    \t\t    case \"integer\": {\n    \t\t        value = msg.payload[option.flow].state || 0\n                \n    \t\t        break;\n    \t\t    }\n    \t\t} \n    \t\tif (value == option.value) {\n    \t\t    parent.show()\n    \t\t} else {\n    \t\t    parent.hide()\n    \t\t}\n    \t} catch(e) {\n    \t\tconsole.log(\"Error\", option, e)\n    \t}\n    })\n    return true\n}\nvar sendNodered = this.scope.send\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 890,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e9d54b52.9b2ee8",
-        "type": "function",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "func": "msg.topic= `select * from user where THE = '${msg.payload}' LIMIT 1`\nmsg.THE = msg.payload\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 510,
-        "y": 400,
-        "wires": [
-            [
-                "e64975fe.fb7688",
-                "bfed6967.ffff38"
-            ]
-        ]
-    },
-    {
-        "id": "e64975fe.fb7688",
-        "type": "sqlite",
-        "z": "11027ba2.6a8d54",
-        "mydb": "2bb33ab0.309196",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 680,
-        "y": 400,
-        "wires": [
-            [
-                "d0952376.daeb7",
-                "5de1824f.1ff83c",
-                "7865d70a.57a408"
-            ]
-        ]
-    },
-    {
-        "id": "8d89a304.9dab1",
-        "type": "debug",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 1210,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "d0952376.daeb7",
-        "type": "change",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "row",
-                "pt": "msg",
-                "to": "payload[0]",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 870,
-        "y": 400,
-        "wires": [
-            [
-                "1805a28b.1a12dd"
-            ]
-        ]
-    },
-    {
-        "id": "1805a28b.1a12dd",
-        "type": "change",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{}",
-                "tot": "json"
-            },
-            {
-                "t": "set",
-                "p": "payload.ten",
-                "pt": "msg",
-                "to": "row.TEN",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "payload.vitri",
-                "pt": "msg",
-                "to": "row.VAITRO",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "payload.image",
-                "pt": "msg",
-                "to": "row.IMAGE",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1040,
-        "y": 400,
-        "wires": [
-            [
-                "6c32b7d0.f3d0f8"
-            ]
-        ]
-    },
-    {
-        "id": "62daf155.314ed",
-        "type": "inject",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "topic": "",
-        "payload": "{\"ten\": \"Nguyễn Minh Triết\", \"vitri\": \"Chủ tịch Hội LHTN Việt Nam tỉnh Khóa V\"}",
-        "payloadType": "json",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 1130,
-        "y": 480,
-        "wires": [
-            [
-                "6c32b7d0.f3d0f8"
-            ]
-        ]
-    },
-    {
-        "id": "5de1824f.1ff83c",
-        "type": "function",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "func": "msg.topic= `update user set MARKED = datetime('now','localtime') where THE = '${msg.THE}'`\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 770,
-        "y": 300,
-        "wires": [
-            [
-                "57e640d2.62724",
-                "ab6bed43.2ce9a"
-            ]
-        ]
-    },
-    {
-        "id": "57e640d2.62724",
-        "type": "sqlite",
-        "z": "11027ba2.6a8d54",
-        "mydb": "2bb33ab0.309196",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 990,
-        "y": 300,
-        "wires": [
-            [
-                "8d89a304.9dab1"
-            ]
-        ]
-    },
-    {
-        "id": "ab6bed43.2ce9a",
-        "type": "debug",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 950,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "7865d70a.57a408",
-        "type": "switch",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "property": "payload.length",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "0",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 850,
-        "y": 440,
-        "wires": [
-            [
-                "13557381.a2eb2c"
-            ]
-        ]
-    },
-    {
-        "id": "13557381.a2eb2c",
-        "type": "change",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{}",
-                "tot": "json"
-            },
-            {
-                "t": "set",
-                "p": "payload.ten",
-                "pt": "msg",
-                "to": "Không có",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.vitri",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.image",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1040,
-        "y": 440,
-        "wires": [
-            [
-                "6c32b7d0.f3d0f8"
-            ]
-        ]
-    },
-    {
-        "id": "34b21ebf.d06d32",
-        "type": "inject",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "x": 210,
-        "y": 580,
-        "wires": [
-            [
-                "a4234e12.c50fe"
-            ]
-        ]
-    },
-    {
-        "id": "74a862a7.29905c",
-        "type": "ui_template",
-        "z": "11027ba2.6a8d54",
-        "group": "8211bb89.834468",
-        "name": "Giao diện điểm danh đơn giản nè ",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<!-- The video -->\n<!--<video autoplay muted loop id=\"myVideo\">\n  <source src=\"/inut.mp4\" type=\"video/mp4\">\n</video>-->\n<img id=\"myVideo\" src=\"/HinhTruocQuetThe.jpg\">\n<img class=\"background\" src=\"/HinhSauQuetThe.jpg\">\n<!-- Optional: some overlay text to describe the video -->\n<div class=\"content\">\n  </div>\n<style>\n.background {\n     background-image: url('/HinhSauQuetThe.jpg');\n     background-size: cover;\n       z-index:10001;\n       position: fixed;\n       display:none;\n       right: 0;\n  bottom: 0;\n  min-width: 100%;\n  min-height: 100%;\n}\n/* Style the video: 100% width and height to cover the entire window */\n#myVideo {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n  min-width: 100%;\n  min-height: 100%;\n  z-index:9999;\n}\n\n/* Add some content at the bottom of the video/page */\n.content {\n  position: fixed;\n  bottom: 0;\n  right:0;\n  background: rgba(0, 0, 0, 0.5);\n  color: #f1f1f1;\n  width: 100%;\n  z-index:10000;\n}\n\n/* Style the button used to pause/play the video */\n#myBtn {\n  width: 200px;\n  font-size: 18px;\n  padding: 10px;\n  border: none;\n  background: #000;\n  color: #fff;\n  cursor: pointer;\n}\n\n#myBtn:hover {\n  background: #ddd;\n  color: black;\n}\n</style>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 660,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bbfb41f8.0640b",
-        "type": "debug",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 770,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "b7c9d8f1.7d6e68",
-        "type": "function",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "func": "msg.payload = parseInt(msg.payload, 10)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 450,
-        "y": 180,
-        "wires": [
-            [
-                "bbfb41f8.0640b",
-                "105d5771.d30719"
-            ]
-        ]
-    },
-    {
-        "id": "bfed6967.ffff38",
-        "type": "ui_template",
-        "z": "11027ba2.6a8d54",
-        "group": "b19c9e30.cafb2",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<script>\n    (function(scope) {\n        console.log('Position 1');\n        console.dir(scope);\n        scope.$watch('msg.payload', function(data) {\n            $(\"#myVideo\").hide()\n            $(\".background\").show();\n            $(\"video\").each(function() {\n             $(this).show()\n             $(this).get(0).pause();\n             $(this).get(0).currentTime = 0;\n           \n            $(this).trigger('play');\n            });\n            \n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 700,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "17c1d840.b31948",
-        "type": "mqtt out",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "topic": "/ByTZ4YRGB/read",
-        "qos": "2",
-        "retain": "false",
-        "broker": "f2e15b82.e5ee48",
-        "x": 830,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "105d5771.d30719",
-        "type": "function",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "func": "msg.payload = {\n    \n    devices: [{\n        state: msg.payload\n    }]\n}\nmsg.payload = JSON.stringify(msg.payload)\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 590,
-        "y": 220,
-        "wires": [
-            [
-                "17c1d840.b31948"
-            ]
-        ]
-    },
-    {
-        "id": "4ac1589b.70e6d8",
-        "type": "ui_template",
-        "z": "11027ba2.6a8d54",
-        "group": "8211bb89.834468",
-        "name": "Giao diện điểm danh phức tạp",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<!-- The video -->\n<!--<video autoplay muted loop id=\"myVideo\">\n  <source src=\"/inut.mp4\" type=\"video/mp4\">\n</video>-->\n<img id=\"myVideo\" src=\"/CuaChuaMo.jpg\">\n<video muted id=\"myVideo2\">\n  <source src=\"/inut.mp4\" type=\"video/mp4\">\n</video>\n<div class=\"background\">\n    <div class=\"jqbox_innerhtml\">\n        <Div>WELCOME ON BOARD</div>\n        <div id=\"name_of\"></div>\n    </div>\n</div>\n<!-- Optional: some overlay text to describe the video -->\n<div class=\"content\">\n  </div>\n<style>\n.background {\n     background-image: url('/SauMoCua.jpg');\n     background-size: cover;\n       z-index:10001;\n       position: fixed;\n       display:none;\n       right: 0;\n  bottom: 0;\n  min-width: 100%;\n  min-height: 100%;\n}\n/* Style the video: 100% width and height to cover the entire window */\n#myVideo {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n  \n  min-width: 100%;\n  min-height: 100%;\n  z-index:9999;\n}\n.jqbox_innerhtml {\n    position: fixed;\n    left: 50%;\n    top: 50%;\n    -ms-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n    width: 600px;\n    height: 100px;\n    padding: 10px;\n    background-color: #FFF;\n    z-index: 200;\n    color: red;\n    text-align:center;\n    font-size: 60px;\n    background: rgba(0,0,0,0);\n}\n#myVideo2 {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n  display:none;\n  min-width: 100%;\n  min-height: 100%;\n  z-index:99999;\n}\n\n/* Add some content at the bottom of the video/page */\n.content {\n  position: fixed;\n  bottom: 0;\n  right:0;\n  background: rgba(0, 0, 0, 0.5);\n  color: #f1f1f1;\n  width: 100%;\n  z-index:10000;\n}\n\n/* Style the button used to pause/play the video */\n#myBtn {\n  width: 200px;\n  font-size: 18px;\n  padding: 10px;\n  border: none;\n  background: #000;\n  color: #fff;\n  cursor: pointer;\n}\n\n#myBtn:hover {\n  background: #ddd;\n  color: black;\n}\n</style>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 330,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4518823f.c4288c",
-        "type": "ui_template",
-        "z": "11027ba2.6a8d54",
-        "group": "b19c9e30.cafb2",
-        "name": "Ẩn cái background",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<script>\n    (function(scope) {\n        console.log('Position 1');\n        console.dir(scope);\n        scope.$watch('msg.payload', function(data) {\n            \n            $(\".background\").hide();\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 2710,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c8712f8f.89747",
-        "type": "change",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload.ten",
-                "pt": "msg",
-                "to": "ĐIỂM DANH THÀNH CÔNG.",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload.vitri",
-                "pt": "msg",
-                "to": "XIN CẢM ƠN! MỜI ĐẠI BIỂU KẾ TIẾP!",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 2480,
-        "y": 480,
-        "wires": [
-            [
-                "4518823f.c4288c"
-            ]
-        ]
-    },
-    {
-        "id": "17b75136.a5bcaf",
-        "type": "ui_template",
-        "z": "11027ba2.6a8d54",
-        "group": "b19c9e30.cafb2",
-        "name": "Giao diện quay sổ xố",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<!-- The video -->\n<!--<video autoplay muted loop id=\"myVideo\">\n  <source src=\"/inut.mp4\" type=\"video/mp4\">\n</video>-->\n<div class=\"background2\">\n    <div class=\"jqbox_innerhtml\">\n        <Div id=\"number\">4888 888<span id=\"sub_number0\">4</span> <span id=\"sub_number1\">4</span><span id=\"sub_number2\">4</span><span id=\"sub_number3\">4</span><span id=\"sub_number4\">4</span> <span id=\"sub_number5\">4</span><span id=\"sub_number6\">4</span><span id=\"sub_number7\">7</span><span id=\"sub_number8\">8</span></span></div>\n        <div id=\"headerNames\"></div>\n    </div>\n</div>\n<!-- Optional: some overlay text to describe the video -->\n<div class=\"content\">\n  </div>\n<style>\n.background2 {\n     background-image: url('/background.jpg');\n     background-size: cover;\n       z-index:1000001;\n       position: fixed;\n       right: 0;\n  bottom: 0;\n  min-width: 100%;\n  min-height: 100%;\n}\n/* Style the video: 100% width and height to cover the entire window */\n#myVideo {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n  \n  min-width: 100%;\n  min-height: 100%;\n  z-index:9999;\n}\n.jqbox_innerhtml {\n    position: fixed;\n    left: 35%;\n    bottom: 0%;\n    -ms-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n    width: 800px;\n    height: 150px;\n    padding: 10px;\n    background-color: #FFF;\n    z-index: 200;\n    color: white;\n    text-align:justify;\n    font-size: 59px;\n    background: rgba(0,0,0,0);\n}\n#myVideo2 {\n  position: fixed;\n  right: 0;\n  bottom: 0;\n  display:none;\n  min-width: 100%;\n  min-height: 100%;\n  z-index:99999;\n}\n\n/* Add some content at the bottom of the video/page */\n.content {\n  position: fixed;\n  bottom: 0;\n  right:0;\n  background: rgba(0, 0, 0, 0.5);\n  color: #f1f1f1;\n  width: 100%;\n  z-index:10000;\n}\n\n/* Style the button used to pause/play the video */\n#myBtn {\n  width: 200px;\n  font-size: 18px;\n  padding: 10px;\n  border: none;\n  background: #000;\n  color: #fff;\n  cursor: pointer;\n}\n\n#myBtn:hover {\n  background: #ddd;\n  color: black;\n}\n</style>\n\n<div id=\"player2\">\n    \n    <div class=\"button\" id=\"startButton\">start</div>\n    <div class=\"button\" id=\"stopButton\">stop</div>\n\n    <p id=\"giai1\"></p>\n    <p id=\"giai2\"></p>\n    <p id=\"giai3\"></p>\n    \n</div>\n<div id=\"timerWrapper\">Time left: <span id=\"timer\"></span></div>\n<div id=\"timesUp\">\n\tTime's Up!\n\t<a href=\"/ui\">RESET</a>\n</div>\n\n    \n\n<style>\nbody {\n\tbackground: #333;\n}\n#player2 {\n    display:none;\n    color: #fff;\n    font-family: Arial, sans-serif;\n    font-size: 50px;\n    text-align: center;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    background: black;\n    top: 0;\n    left: 0;\n    z-index: 10000;\n}\nh1#headerNames {\n\tfont-weight:bold;\n}\n\n#giai1 {\n    font-size: 50px;\n    color: green;\n}\n#giai2 {\n    font-size: 40px;\n    color: yellow;\n}\n#giai1, #giai2, #giai3 {\n\tcolor: #fff;\n\tfont-family: Georgia, serif;\n\tfont-size: 30px;\n\tmargin-top: 20px;\n\ttext-align: center;\n\tcursor: pointer;\n\tbackground: black !important;\n}\n\n.button {\n\twidth: 150px;\n\tmargin: auto;\n\tpadding: 20px;\n\tbackground: #1fa91f;\n\tborder: 3px solid #fff;\n\tborder-radius: 10px;\n\tcolor: #fff;\n\tfont-family: Arial, sans-serif;\n\tfont-size: 30px;\n\tfont-weight: bold;\n\ttext-align: center;\n\ttext-transform: uppercase;\n\tletter-spacing: 2px;\n\tdisplay: block;\n\tcursor: pointer;\n}\n\n#stopButton {\n\tbackground: #ff0000;\n\tdisplay: none;\n}\n\n#player {\n    \n\tcolor: #fff;\n\tfont-family: Arial, sans-serif;\n\tfont-size: 50px;\n\ttext-align: center;\n}\n\n#timerWrapper {\n    display:none;\n\tmargin: 50px 0;\n\tcolor: #fff;\n\tfont-family: Arial, sans-serif;\n\tfont-size: 50px;\n\ttext-align: center;\n\topacity: 0;\n\ttransition: opacity 1s;\n}\n#timerWrapper.visible {\n\topacity: 1;\n}\n\n#timesUp {\n\tpadding-top: 20%;\n\tbackground-color: red;\n\tcolor: #fff;\n\tfont-family: Arial, sans-serif;\n\tfont-size: 100px;\n\tfont-weight: bold;\n\ttext-transform: uppercase;\n\ttext-align: center;\n\tposition: fixed;\n\tleft: 0;\n\tright: 0;\n\ttop: 0;\n\tbottom: 0;\n\tdisplay: none;\n\ta {\n\t\tmargin: 100px auto;\n\t\tfont-size: 15px;\n\t\tposition: absolute;\n\t\tbottom: 50px;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tdisplay: none;\n\t}\n}\n#timesUp.backgroundRed {\n\tbackground-color: #333;\n}\n\n@media only screen and (max-width: 600px) {\n\th1 {\n\t\tfont-size: 50px;\n\t}\n}\n\n</style>\n<script>\nnamesList = []\n$(\"document\").ready(function() {\n    \n});",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 260,
-        "y": 180,
-        "wires": [
-            [
-                "b7c9d8f1.7d6e68"
-            ]
-        ]
-    },
-    {
-        "id": "5ded7f61.7716",
-        "type": "inject",
-        "z": "11027ba2.6a8d54",
-        "name": "sét mode",
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "x": 540,
-        "y": 120,
-        "wires": [
-            [
-                "b5babca2.f78d3"
-            ]
-        ]
-    },
-    {
-        "id": "b5babca2.f78d3",
-        "type": "change",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "mode",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 720,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4723735f.a265bc",
-        "type": "link in",
-        "z": "11027ba2.6a8d54",
-        "name": "",
-        "links": [
-            "45abceee.68505"
-        ],
-        "x": 175,
-        "y": 240,
-        "wires": [
-            [
-                "c4b17fe.98f798"
-            ]
-        ]
-    },
-    {
-        "id": "c4b17fe.98f798",
-        "type": "ui_template",
-        "z": "11027ba2.6a8d54",
-        "group": "b19c9e30.cafb2",
-        "name": "Cài tên haiz",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<script>\n    (function(scope) {\n        $(document).ready(function() {\n            var giaiFrom = 3\n            var giai = []\n            var namesList = []\n            console.log('Position 1');\n        // Change to false if you don't want a timer\n            const showTimer = true;\n            \n            // Set timer countdown time here in minutes : seconds format\n            const time = 99 + \":\" + 00;\n            \n            console.dir(scope);\n            var i = 0;\n            var x = 0;\n            var intervalHandle = null;\n            \n            // Optional countdown timer\n            // Add zero in front of numbers < 10\n            function checkSecond(sec) {\n              if (sec < 10 && sec >= 0) {\n                sec = \"0\" + sec;\n              }\n              if (sec < 0) {\n                sec = \"59\";\n              }\n              return sec;\n            }\n            \n            const startTimer = function () {\n              const presentTime = timer.innerHTML;\n              const timeArray = presentTime.split(/[:]+/);\n              let m = timeArray[0];\n              let s = checkSecond(timeArray[1] - 1);\n            \n              if (s == 59) {\n                m = m - 1;\n              }\n              if (m < 0) {\n                timesUp.style.display = \"block\";\n              }\n            \n              timer.innerHTML = m + \":\" + s;\n            \n              setTimeout(startTimer, 1000);\n            };\n            \n            // Start or stop the name shuffle on button click\n            \n            \n           \n        \n            \n            var startButton = document.getElementById('startButton');\n                \n            const stopButton = document.getElementById('stopButton');\n            const headerOne = document.getElementById('headerNames');\n            const timesUp = document.getElementById('timesUp');\n            const timerWrapper = document.getElementById('timerWrapper');\n            const timer = document.getElementById('timer');\n            \n            \n            \n            startButton.addEventListener('click', function () {\n              this.style.display = \"none\";\n              stopButton.style.display = \"block\";\n              intervalHandle = setInterval(function () {\n                headerNames.textContent = namesList[i++ % namesList.length].TEN;\n                \n              }, 20);\n              if (showTimer === true) {\n                timerWrapper.classList.remove('visible');\n              }\n            });\n            stopButton.addEventListener('click', function () {\n              this.style.display = \"none\";\n              startButton.style.display = \"block\";\n              clearInterval(intervalHandle);\n              timer.innerHTML = time;\n              if (showTimer === true) {\n                timerWrapper.classList.add('visible');\n              }\n              $(\"#giai\" + giaiFrom).html('Giải ' + giaiFrom + ': ' + headerNames.textContent)\n              giaiFrom--\n              startTimer();\n            });\n            \n            document.body.onkeyup = function(e) {\n\tif (e.keyCode == 32) {\n\t\tif (x%2===0) {\n\t\t\tstartButton.style.display = \"none\";\n\t\t\tstopButton.style.display = \"block\";\n\t\t\tintervalHandle = setInterval(function () {\n\t\t\t    var name = namesList[i++ % namesList.length]\n\t\t\t\theaderNames.textContent = name.TEN;\n\t\t\t\tfor (var id = 0; id < 9; id++)\n\t\t\t\t    document.getElementById('sub_number' + id).textContent = name.VAITRO[id]\n\t\t\t}, 5);\n\t\t\tif (showTimer===true) {\n\t\t\t\ttimerWrapper.classList.remove('visible');\n\t\t\t}\n\t\t} else {\n\t\t\tstartButton.style.display = \"block\";\n\t\t\tstopButton.style.display = \"none\";\n\t\t\tclearInterval(intervalHandle);\n\t\t\ttimer.innerHTML = time;\n\t\t\tif (showTimer===true) {\n\t\t\t\ttimerWrapper.classList.add('visible');\n\t\t\t}\n\t\t\tstartTimer();\n\t\t}\n\t\tx++; \n\t}\n} \n            \n            \n            scope.$watch('msg.payload', function(data) {\n                \n                console.log('msg.payload',data)\n                namesList = []\n                for (var i = 0; i < data.length; i++) {\n                    namesList.push(data[i])\n                }\n                \n                // Add list of names here\n                \n                \n                \n                // Default variables\n            },true);\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 290,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aa90481d.9cc378",
-        "type": "ui_template",
-        "z": "d3fd0df1.6e3a9",
-        "group": "858f730.09ec19",
-        "name": "Script",
-        "order": 3,
-        "width": 1,
-        "height": 1,
-        "format": "",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 570,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3816402c.63cfd",
-        "type": "http in",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "url": "/uploadpretty_post",
-        "method": "post",
-        "upload": true,
-        "swaggerDoc": "",
-        "x": 290,
-        "y": 180,
-        "wires": [
-            [
-                "f920698a.79f158"
-            ]
-        ]
-    },
-    {
-        "id": "24768d6e.bd2192",
-        "type": "http response",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 950,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "186f7209.06f36e",
-        "type": "function",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "func": "if (msg.req.files[0].mimetype.includes('image')) {\n    msg.payload = `<img src=\"data:image/gif;base64,${msg.payload.toString('base64')}\">`;\n} else {\n    msg.payload = msg.payload.toString();\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 690,
-        "y": 180,
-        "wires": [
-            [
-                "4f23d95d.8a40a8"
-            ]
-        ]
-    },
-    {
-        "id": "f920698a.79f158",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "req.files[0].buffer",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 500,
-        "y": 180,
-        "wires": [
-            [
-                "186f7209.06f36e",
-                "27edb69.f7e274a"
-            ]
-        ]
-    },
-    {
-        "id": "4f23d95d.8a40a8",
-        "type": "template",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "<p>File {{originalname}} uploaded !</p>\n\n<h2>Contents:</h2>\n",
-        "output": "str",
-        "x": 810,
-        "y": 180,
-        "wires": [
-            [
-                "24768d6e.bd2192"
-            ]
-        ]
-    },
-    {
-        "id": "27edb69.f7e274a",
-        "type": "file",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "filename": "database.sqlite3",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "true",
-        "x": 690,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "8688db98.257538",
-        "type": "inject",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "x": 370,
-        "y": 80,
-        "wires": [
-            [
-                "5ceff03.6bac41"
-            ]
-        ]
-    },
-    {
-        "id": "5ceff03.6bac41",
-        "type": "template",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "field": "css",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "/*\n * The MIT License\n * Copyright (c) 2012 Matias Meno <m@tias.me>\n */\n@-webkit-keyframes passing-through {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30%, 70% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translateY(-40px);\n    -moz-transform: translateY(-40px);\n    -ms-transform: translateY(-40px);\n    -o-transform: translateY(-40px);\n    transform: translateY(-40px); } }\n@-moz-keyframes passing-through {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30%, 70% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translateY(-40px);\n    -moz-transform: translateY(-40px);\n    -ms-transform: translateY(-40px);\n    -o-transform: translateY(-40px);\n    transform: translateY(-40px); } }\n@keyframes passing-through {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30%, 70% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translateY(-40px);\n    -moz-transform: translateY(-40px);\n    -ms-transform: translateY(-40px);\n    -o-transform: translateY(-40px);\n    transform: translateY(-40px); } }\n@-webkit-keyframes slide-in {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); } }\n@-moz-keyframes slide-in {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); } }\n@keyframes slide-in {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); } }\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); }\n  10% {\n    -webkit-transform: scale(1.1);\n    -moz-transform: scale(1.1);\n    -ms-transform: scale(1.1);\n    -o-transform: scale(1.1);\n    transform: scale(1.1); }\n  20% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); } }\n@-moz-keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); }\n  10% {\n    -webkit-transform: scale(1.1);\n    -moz-transform: scale(1.1);\n    -ms-transform: scale(1.1);\n    -o-transform: scale(1.1);\n    transform: scale(1.1); }\n  20% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); } }\n@keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); }\n  10% {\n    -webkit-transform: scale(1.1);\n    -moz-transform: scale(1.1);\n    -ms-transform: scale(1.1);\n    -o-transform: scale(1.1);\n    transform: scale(1.1); }\n  20% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); } }\n.dropzone, .dropzone * {\n  box-sizing: border-box; }\n\n.dropzone {\n  min-height: 150px;\n  border: 2px solid rgba(0, 0, 0, 0.3);\n  background: white;\n  padding: 20px 20px; }\n  .dropzone.dz-clickable {\n    cursor: pointer; }\n    .dropzone.dz-clickable * {\n      cursor: default; }\n    .dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message * {\n      cursor: pointer; }\n  .dropzone.dz-started .dz-message {\n    display: none; }\n  .dropzone.dz-drag-hover {\n    border-style: solid; }\n    .dropzone.dz-drag-hover .dz-message {\n      opacity: 0.5; }\n  .dropzone .dz-message {\n    text-align: center;\n    margin: 2em 0; }\n  .dropzone .dz-preview {\n    position: relative;\n    display: inline-block;\n    vertical-align: top;\n    margin: 16px;\n    min-height: 100px; }\n    .dropzone .dz-preview:hover {\n      z-index: 1000; }\n      .dropzone .dz-preview:hover .dz-details {\n        opacity: 1; }\n    .dropzone .dz-preview.dz-file-preview .dz-image {\n      border-radius: 20px;\n      background: #999;\n      background: linear-gradient(to bottom, #eee, #ddd); }\n    .dropzone .dz-preview.dz-file-preview .dz-details {\n      opacity: 1; }\n    .dropzone .dz-preview.dz-image-preview {\n      background: white; }\n      .dropzone .dz-preview.dz-image-preview .dz-details {\n        -webkit-transition: opacity 0.2s linear;\n        -moz-transition: opacity 0.2s linear;\n        -ms-transition: opacity 0.2s linear;\n        -o-transition: opacity 0.2s linear;\n        transition: opacity 0.2s linear; }\n    .dropzone .dz-preview .dz-remove {\n      font-size: 14px;\n      text-align: center;\n      display: block;\n      cursor: pointer;\n      border: none; }\n      .dropzone .dz-preview .dz-remove:hover {\n        text-decoration: underline; }\n    .dropzone .dz-preview:hover .dz-details {\n      opacity: 1; }\n    .dropzone .dz-preview .dz-details {\n      z-index: 20;\n      position: absolute;\n      top: 0;\n      left: 0;\n      opacity: 0;\n      font-size: 13px;\n      min-width: 100%;\n      max-width: 100%;\n      padding: 2em 1em;\n      text-align: center;\n      color: rgba(0, 0, 0, 0.9);\n      line-height: 150%; }\n      .dropzone .dz-preview .dz-details .dz-size {\n        margin-bottom: 1em;\n        font-size: 16px; }\n      .dropzone .dz-preview .dz-details .dz-filename {\n        white-space: nowrap; }\n        .dropzone .dz-preview .dz-details .dz-filename:hover span {\n          border: 1px solid rgba(200, 200, 200, 0.8);\n          background-color: rgba(255, 255, 255, 0.8); }\n        .dropzone .dz-preview .dz-details .dz-filename:not(:hover) {\n          overflow: hidden;\n          text-overflow: ellipsis; }\n          .dropzone .dz-preview .dz-details .dz-filename:not(:hover) span {\n            border: 1px solid transparent; }\n      .dropzone .dz-preview .dz-details .dz-filename span, .dropzone .dz-preview .dz-details .dz-size span {\n        background-color: rgba(255, 255, 255, 0.4);\n        padding: 0 0.4em;\n        border-radius: 3px; }\n    .dropzone .dz-preview:hover .dz-image img {\n      -webkit-transform: scale(1.05, 1.05);\n      -moz-transform: scale(1.05, 1.05);\n      -ms-transform: scale(1.05, 1.05);\n      -o-transform: scale(1.05, 1.05);\n      transform: scale(1.05, 1.05);\n      -webkit-filter: blur(8px);\n      filter: blur(8px); }\n    .dropzone .dz-preview .dz-image {\n      border-radius: 20px;\n      overflow: hidden;\n      width: 120px;\n      height: 120px;\n      position: relative;\n      display: block;\n      z-index: 10; }\n      .dropzone .dz-preview .dz-image img {\n        display: block; }\n    .dropzone .dz-preview.dz-success .dz-success-mark {\n      -webkit-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -moz-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -ms-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -o-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1); }\n    .dropzone .dz-preview.dz-error .dz-error-mark {\n      opacity: 1;\n      -webkit-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -moz-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -ms-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -o-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1); }\n    .dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark {\n      pointer-events: none;\n      opacity: 0;\n      z-index: 500;\n      position: absolute;\n      display: block;\n      top: 50%;\n      left: 50%;\n      margin-left: -27px;\n      margin-top: -27px; }\n      .dropzone .dz-preview .dz-success-mark svg, .dropzone .dz-preview .dz-error-mark svg {\n        display: block;\n        width: 54px;\n        height: 54px; }\n    .dropzone .dz-preview.dz-processing .dz-progress {\n      opacity: 1;\n      -webkit-transition: all 0.2s linear;\n      -moz-transition: all 0.2s linear;\n      -ms-transition: all 0.2s linear;\n      -o-transition: all 0.2s linear;\n      transition: all 0.2s linear; }\n    .dropzone .dz-preview.dz-complete .dz-progress {\n      opacity: 0;\n      -webkit-transition: opacity 0.4s ease-in;\n      -moz-transition: opacity 0.4s ease-in;\n      -ms-transition: opacity 0.4s ease-in;\n      -o-transition: opacity 0.4s ease-in;\n      transition: opacity 0.4s ease-in; }\n    .dropzone .dz-preview:not(.dz-processing) .dz-progress {\n      -webkit-animation: pulse 6s ease infinite;\n      -moz-animation: pulse 6s ease infinite;\n      -ms-animation: pulse 6s ease infinite;\n      -o-animation: pulse 6s ease infinite;\n      animation: pulse 6s ease infinite; }\n    .dropzone .dz-preview .dz-progress {\n      opacity: 1;\n      z-index: 1000;\n      pointer-events: none;\n      position: absolute;\n      height: 16px;\n      left: 50%;`\n      top: 50%;\n      margin-top: -8px;\n      width: 80px;\n      margin-left: -40px;\n      background: rgba(255, 255, 255, 0.9);\n      -webkit-transform: scale(1);\n      border-radius: 8px;\n      overflow: hidden; }\n      .dropzone .dz-preview .dz-progress .dz-upload {\n        background: #333;\n        background: linear-gradient(to bottom, #666, #444);\n        position: absolute;\n        top: 0;\n        left: 0;\n        bottom: 0;\n        width: 0;\n        -webkit-transition: width 300ms ease-in-out;\n        -moz-transition: width 300ms ease-in-out;\n        -ms-transition: width 300ms ease-in-out;\n        -o-transition: width 300ms ease-in-out;\n        transition: width 300ms ease-in-out; }\n    .dropzone .dz-preview.dz-error .dz-error-message {\n      display: block; }\n    .dropzone .dz-preview.dz-error:hover .dz-error-message {\n      opacity: 1;\n      pointer-events: auto; }\n    .dropzone .dz-preview .dz-error-message {\n      pointer-events: none;\n      z-index: 1000;\n      position: absolute;\n      display: block;\n      display: none;\n      opacity: 0;\n      -webkit-transition: opacity 0.3s ease;\n      -moz-transition: opacity 0.3s ease;\n      -ms-transition: opacity 0.3s ease;\n      -o-transition: opacity 0.3s ease;\n      transition: opacity 0.3s ease;\n      border-radius: 8px;\n      font-size: 13px;\n      top: 130px;\n      left: -10px;\n      width: 140px;\n      background: #be2626;\n      background: linear-gradient(to bottom, #be2626, #a92222);\n      padding: 0.5em 1.2em;\n      color: white; }\n      .dropzone .dz-preview .dz-error-message:after {\n        content: '';\n        position: absolute;\n        top: -6px;\n        left: 64px;\n        width: 0;\n        height: 0;\n        border-left: 6px solid transparent;\n        border-right: 6px solid transparent;\n        border-bottom: 6px solid #be2626; }",
-        "output": "str",
-        "x": 530,
-        "y": 80,
-        "wires": [
-            [
-                "1ae6fea4.acbc51"
-            ]
-        ]
-    },
-    {
-        "id": "4ecbf59b.cc555c",
-        "type": "ui_template",
-        "z": "d3fd0df1.6e3a9",
-        "group": "858f730.09ec19",
-        "name": "Upload",
-        "order": 2,
-        "width": 7,
-        "height": 6,
-        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>\n<script>\n    \n/*\n *\n * More info at [www.dropzonejs.com](http://www.dropzonejs.com)\n *\n * Copyright (c) 2012, Matias Meno\n *\n * Permission is hereby granted, free of charge, to any person obtaining a copy\n * of this software and associated documentation files (the \"Software\"), to deal\n * in the Software without restriction, including without limitation the rights\n * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n * copies of the Software, and to permit persons to whom the Software is\n * furnished to do so, subject to the following conditions:\n *\n * The above copyright notice and this permission notice shall be included in\n * all copies or substantial portions of the Software.\n *\n * THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n * THE SOFTWARE.\n *\n */\n\n(function() {\n  var Dropzone, Emitter, camelize, contentLoaded, detectVerticalSquash, drawImageIOSFix, noop, without,\n    __slice = [].slice,\n    __hasProp = {}.hasOwnProperty,\n    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };\n\n  noop = function() {};\n\n  Emitter = (function() {\n    function Emitter() {}\n\n    Emitter.prototype.addEventListener = Emitter.prototype.on;\n\n    Emitter.prototype.on = function(event, fn) {\n      this._callbacks = this._callbacks || {};\n      if (!this._callbacks[event]) {\n        this._callbacks[event] = [];\n      }\n      this._callbacks[event].push(fn);\n      return this;\n    };\n\n    Emitter.prototype.emit = function() {\n      var args, callback, callbacks, event, _i, _len;\n      event = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];\n      this._callbacks = this._callbacks || {};\n      callbacks = this._callbacks[event];\n      if (callbacks) {\n        for (_i = 0, _len = callbacks.length; _i < _len; _i++) {\n          callback = callbacks[_i];\n          callback.apply(this, args);\n        }\n      }\n      return this;\n    };\n\n    Emitter.prototype.removeListener = Emitter.prototype.off;\n\n    Emitter.prototype.removeAllListeners = Emitter.prototype.off;\n\n    Emitter.prototype.removeEventListener = Emitter.prototype.off;\n\n    Emitter.prototype.off = function(event, fn) {\n      var callback, callbacks, i, _i, _len;\n      if (!this._callbacks || arguments.length === 0) {\n        this._callbacks = {};\n        return this;\n      }\n      callbacks = this._callbacks[event];\n      if (!callbacks) {\n        return this;\n      }\n      if (arguments.length === 1) {\n        delete this._callbacks[event];\n        return this;\n      }\n      for (i = _i = 0, _len = callbacks.length; _i < _len; i = ++_i) {\n        callback = callbacks[i];\n        if (callback === fn) {\n          callbacks.splice(i, 1);\n          break;\n        }\n      }\n      return this;\n    };\n\n    return Emitter;\n\n  })();\n\n  Dropzone = (function(_super) {\n    var extend, resolveOption;\n\n    __extends(Dropzone, _super);\n\n    Dropzone.prototype.Emitter = Emitter;\n\n\n    /*\n    This is a list of all available events you can register on a dropzone object.\n    \n    You can register an event handler like this:\n    \n        dropzone.on(\"dragEnter\", function() { });\n     */\n\n    Dropzone.prototype.events = [\"drop\", \"dragstart\", \"dragend\", \"dragenter\", \"dragover\", \"dragleave\", \"addedfile\", \"addedfiles\", \"removedfile\", \"thumbnail\", \"error\", \"errormultiple\", \"processing\", \"processingmultiple\", \"uploadprogress\", \"totaluploadprogress\", \"sending\", \"sendingmultiple\", \"success\", \"successmultiple\", \"canceled\", \"canceledmultiple\", \"complete\", \"completemultiple\", \"reset\", \"maxfilesexceeded\", \"maxfilesreached\", \"queuecomplete\"];\n\n    Dropzone.prototype.defaultOptions = {\n      url: null,\n      method: \"post\",\n      withCredentials: false,\n      parallelUploads: 2,\n      uploadMultiple: false,\n      maxFilesize: 256,\n      paramName: \"file\",\n      createImageThumbnails: true,\n      maxThumbnailFilesize: 10,\n      thumbnailWidth: 120,\n      thumbnailHeight: 120,\n      filesizeBase: 1000,\n      maxFiles: null,\n      params: {},\n      clickable: true,\n      ignoreHiddenFiles: true,\n      acceptedFiles: null,\n      acceptedMimeTypes: null,\n      autoProcessQueue: true,\n      autoQueue: true,\n      addRemoveLinks: false,\n      previewsContainer: null,\n      hiddenInputContainer: \"body\",\n      capture: null,\n      renameFilename: null,\n      dictDefaultMessage: \"Drop files here to upload\",\n      dictFallbackMessage: \"Your browser does not support drag'n'drop file uploads.\",\n      dictFallbackText: \"Please use the fallback form below to upload your files like in the olden days.\",\n      dictFileTooBig: \"File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.\",\n      dictInvalidFileType: \"You can't upload files of this type.\",\n      dictResponseError: \"Server responded with {{statusCode}} code.\",\n      dictCancelUpload: \"Cancel upload\",\n      dictCancelUploadConfirmation: \"Are you sure you want to cancel this upload?\",\n      dictRemoveFile: \"Remove file\",\n      dictRemoveFileConfirmation: null,\n      dictMaxFilesExceeded: \"You can not upload any more files.\",\n      accept: function(file, done) {\n        return done();\n      },\n      init: function() {\n        return noop;\n      },\n      forceFallback: false,\n      fallback: function() {\n        var child, messageElement, span, _i, _len, _ref;\n        this.element.className = \"\" + this.element.className + \" dz-browser-not-supported\";\n        _ref = this.element.getElementsByTagName(\"div\");\n        for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n          child = _ref[_i];\n          if (/(^| )dz-message($| )/.test(child.className)) {\n            messageElement = child;\n            child.className = \"dz-message\";\n            continue;\n          }\n        }\n        if (!messageElement) {\n          messageElement = Dropzone.createElement(\"<div class=\\\"dz-message\\\"><span></span></div>\");\n          this.element.appendChild(messageElement);\n        }\n        span = messageElement.getElementsByTagName(\"span\")[0];\n        if (span) {\n          if (span.textContent != null) {\n            span.textContent = this.options.dictFallbackMessage;\n          } else if (span.innerText != null) {\n            span.innerText = this.options.dictFallbackMessage;\n          }\n        }\n        return this.element.appendChild(this.getFallbackForm());\n      },\n      resize: function(file) {\n        var info, srcRatio, trgRatio;\n        info = {\n          srcX: 0,\n          srcY: 0,\n          srcWidth: file.width,\n          srcHeight: file.height\n        };\n        srcRatio = file.width / file.height;\n        info.optWidth = this.options.thumbnailWidth;\n        info.optHeight = this.options.thumbnailHeight;\n        if ((info.optWidth == null) && (info.optHeight == null)) {\n          info.optWidth = info.srcWidth;\n          info.optHeight = info.srcHeight;\n        } else if (info.optWidth == null) {\n          info.optWidth = srcRatio * info.optHeight;\n        } else if (info.optHeight == null) {\n          info.optHeight = (1 / srcRatio) * info.optWidth;\n        }\n        trgRatio = info.optWidth / info.optHeight;\n        if (file.height < info.optHeight || file.width < info.optWidth) {\n          info.trgHeight = info.srcHeight;\n          info.trgWidth = info.srcWidth;\n        } else {\n          if (srcRatio > trgRatio) {\n            info.srcHeight = file.height;\n            info.srcWidth = info.srcHeight * trgRatio;\n          } else {\n            info.srcWidth = file.width;\n            info.srcHeight = info.srcWidth / trgRatio;\n          }\n        }\n        info.srcX = (file.width - info.srcWidth) / 2;\n        info.srcY = (file.height - info.srcHeight) / 2;\n        return info;\n      },\n\n      /*\n      Those functions register themselves to the events on init and handle all\n      the user interface specific stuff. Overwriting them won't break the upload\n      but can break the way it's displayed.\n      You can overwrite them if you don't like the default behavior. If you just\n      want to add an additional event handler, register it on the dropzone object\n      and don't overwrite those options.\n       */\n      drop: function(e) {\n        return this.element.classList.remove(\"dz-drag-hover\");\n      },\n      dragstart: noop,\n      dragend: function(e) {\n        return this.element.classList.remove(\"dz-drag-hover\");\n      },\n      dragenter: function(e) {\n        return this.element.classList.add(\"dz-drag-hover\");\n      },\n      dragover: function(e) {\n        return this.element.classList.add(\"dz-drag-hover\");\n      },\n      dragleave: function(e) {\n        return this.element.classList.remove(\"dz-drag-hover\");\n      },\n      paste: noop,\n      reset: function() {\n        return this.element.classList.remove(\"dz-started\");\n      },\n      addedfile: function(file) {\n        var node, removeFileEvent, removeLink, _i, _j, _k, _len, _len1, _len2, _ref, _ref1, _ref2, _results;\n        if (this.element === this.previewsContainer) {\n          this.element.classList.add(\"dz-started\");\n        }\n        if (this.previewsContainer) {\n          file.previewElement = Dropzone.createElement(this.options.previewTemplate.trim());\n          file.previewTemplate = file.previewElement;\n          this.previewsContainer.appendChild(file.previewElement);\n          _ref = file.previewElement.querySelectorAll(\"[data-dz-name]\");\n          for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n            node = _ref[_i];\n            node.textContent = this._renameFilename(file.name);\n          }\n          _ref1 = file.previewElement.querySelectorAll(\"[data-dz-size]\");\n          for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {\n            node = _ref1[_j];\n            node.innerHTML = this.filesize(file.size);\n          }\n          if (this.options.addRemoveLinks) {\n            file._removeLink = Dropzone.createElement(\"<a class=\\\"dz-remove\\\" href=\\\"javascript:undefined;\\\" data-dz-remove>\" + this.options.dictRemoveFile + \"</a>\");\n            file.previewElement.appendChild(file._removeLink);\n          }\n          removeFileEvent = (function(_this) {\n            return function(e) {\n              e.preventDefault();\n              e.stopPropagation();\n              if (file.status === Dropzone.UPLOADING) {\n                return Dropzone.confirm(_this.options.dictCancelUploadConfirmation, function() {\n                  return _this.removeFile(file);\n                });\n              } else {\n                if (_this.options.dictRemoveFileConfirmation) {\n                  return Dropzone.confirm(_this.options.dictRemoveFileConfirmation, function() {\n                    return _this.removeFile(file);\n                  });\n                } else {\n                  return _this.removeFile(file);\n                }\n              }\n            };\n          })(this);\n          _ref2 = file.previewElement.querySelectorAll(\"[data-dz-remove]\");\n          _results = [];\n          for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {\n            removeLink = _ref2[_k];\n            _results.push(removeLink.addEventListener(\"click\", removeFileEvent));\n          }\n          return _results;\n        }\n      },\n      removedfile: function(file) {\n        var _ref;\n        if (file.previewElement) {\n          if ((_ref = file.previewElement) != null) {\n            _ref.parentNode.removeChild(file.previewElement);\n          }\n        }\n        return this._updateMaxFilesReachedClass();\n      },\n      thumbnail: function(file, dataUrl) {\n        var thumbnailElement, _i, _len, _ref;\n        if (file.previewElement) {\n          file.previewElement.classList.remove(\"dz-file-preview\");\n          _ref = file.previewElement.querySelectorAll(\"[data-dz-thumbnail]\");\n          for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n            thumbnailElement = _ref[_i];\n            thumbnailElement.alt = file.name;\n            thumbnailElement.src = dataUrl;\n          }\n          return setTimeout(((function(_this) {\n            return function() {\n              return file.previewElement.classList.add(\"dz-image-preview\");\n            };\n          })(this)), 1);\n        }\n      },\n      error: function(file, message) {\n        var node, _i, _len, _ref, _results;\n        if (file.previewElement) {\n          file.previewElement.classList.add(\"dz-error\");\n          if (typeof message !== \"String\" && message.error) {\n            message = message.error;\n          }\n          _ref = file.previewElement.querySelectorAll(\"[data-dz-errormessage]\");\n          _results = [];\n          for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n            node = _ref[_i];\n            _results.push(node.textContent = message);\n          }\n          return _results;\n        }\n      },\n      errormultiple: noop,\n      processing: function(file) {\n        if (file.previewElement) {\n          file.previewElement.classList.add(\"dz-processing\");\n          if (file._removeLink) {\n            return file._removeLink.textContent = this.options.dictCancelUpload;\n          }\n        }\n      },\n      processingmultiple: noop,\n      uploadprogress: function(file, progress, bytesSent) {\n        var node, _i, _len, _ref, _results;\n        if (file.previewElement) {\n          _ref = file.previewElement.querySelectorAll(\"[data-dz-uploadprogress]\");\n          _results = [];\n          for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n            node = _ref[_i];\n            if (node.nodeName === 'PROGRESS') {\n              _results.push(node.value = progress);\n            } else {\n              _results.push(node.style.width = \"\" + progress + \"%\");\n            }\n          }\n          return _results;\n        }\n      },\n      totaluploadprogress: noop,\n      sending: noop,\n      sendingmultiple: noop,\n      success: function(file) {\n        if (file.previewElement) {\n          return file.previewElement.classList.add(\"dz-success\");\n        }\n      },\n      successmultiple: noop,\n      canceled: function(file) {\n        return this.emit(\"error\", file, \"Upload canceled.\");\n      },\n      canceledmultiple: noop,\n      complete: function(file) {\n        if (file._removeLink) {\n          file._removeLink.textContent = this.options.dictRemoveFile;\n        }\n        if (file.previewElement) {\n          return file.previewElement.classList.add(\"dz-complete\");\n        }\n      },\n      completemultiple: noop,\n      maxfilesexceeded: noop,\n      maxfilesreached: noop,\n      queuecomplete: noop,\n      addedfiles: noop,\n      previewTemplate: \"<div class=\\\"dz-preview dz-file-preview\\\">\\n  <div class=\\\"dz-image\\\"><img data-dz-thumbnail /></div>\\n  <div class=\\\"dz-details\\\">\\n    <div class=\\\"dz-size\\\"><span data-dz-size></span></div>\\n    <div class=\\\"dz-filename\\\"><span data-dz-name></span></div>\\n  </div>\\n  <div class=\\\"dz-progress\\\"><span class=\\\"dz-upload\\\" data-dz-uploadprogress></span></div>\\n  <div class=\\\"dz-error-message\\\"><span data-dz-errormessage></span></div>\\n  <div class=\\\"dz-success-mark\\\">\\n    <svg width=\\\"54px\\\" height=\\\"54px\\\" viewBox=\\\"0 0 54 54\\\" version=\\\"1.1\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\" xmlns:xlink=\\\"http://www.w3.org/1999/xlink\\\" xmlns:sketch=\\\"http://www.bohemiancoding.com/sketch/ns\\\">\\n      <title>Check</title>\\n      <defs></defs>\\n      <g id=\\\"Page-1\\\" stroke=\\\"none\\\" stroke-width=\\\"1\\\" fill=\\\"none\\\" fill-rule=\\\"evenodd\\\" sketch:type=\\\"MSPage\\\">\\n        <path d=\\\"M23.5,31.8431458 L17.5852419,25.9283877 C16.0248253,24.3679711 13.4910294,24.366835 11.9289322,25.9289322 C10.3700136,27.4878508 10.3665912,30.0234455 11.9283877,31.5852419 L20.4147581,40.0716123 C20.5133999,40.1702541 20.6159315,40.2626649 20.7218615,40.3488435 C22.2835669,41.8725651 24.794234,41.8626202 26.3461564,40.3106978 L43.3106978,23.3461564 C44.8771021,21.7797521 44.8758057,19.2483887 43.3137085,17.6862915 C41.7547899,16.1273729 39.2176035,16.1255422 37.6538436,17.6893022 L23.5,31.8431458 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z\\\" id=\\\"Oval-2\\\" stroke-opacity=\\\"0.198794158\\\" stroke=\\\"#747474\\\" fill-opacity=\\\"0.816519475\\\" fill=\\\"#FFFFFF\\\" sketch:type=\\\"MSShapeGroup\\\"></path>\\n      </g>\\n    </svg>\\n  </div>\\n  <div class=\\\"dz-error-mark\\\">\\n    <svg width=\\\"54px\\\" height=\\\"54px\\\" viewBox=\\\"0 0 54 54\\\" version=\\\"1.1\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\" xmlns:xlink=\\\"http://www.w3.org/1999/xlink\\\" xmlns:sketch=\\\"http://www.bohemiancoding.com/sketch/ns\\\">\\n      <title>Error</title>\\n      <defs></defs>\\n      <g id=\\\"Page-1\\\" stroke=\\\"none\\\" stroke-width=\\\"1\\\" fill=\\\"none\\\" fill-rule=\\\"evenodd\\\" sketch:type=\\\"MSPage\\\">\\n        <g id=\\\"Check-+-Oval-2\\\" sketch:type=\\\"MSLayerGroup\\\" stroke=\\\"#747474\\\" stroke-opacity=\\\"0.198794158\\\" fill=\\\"#FFFFFF\\\" fill-opacity=\\\"0.816519475\\\">\\n          <path d=\\\"M32.6568542,29 L38.3106978,23.3461564 C39.8771021,21.7797521 39.8758057,19.2483887 38.3137085,17.6862915 C36.7547899,16.1273729 34.2176035,16.1255422 32.6538436,17.6893022 L27,23.3431458 L21.3461564,17.6893022 C19.7823965,16.1255422 17.2452101,16.1273729 15.6862915,17.6862915 C14.1241943,19.2483887 14.1228979,21.7797521 15.6893022,23.3461564 L21.3431458,29 L15.6893022,34.6538436 C14.1228979,36.2202479 14.1241943,38.7516113 15.6862915,40.3137085 C17.2452101,41.8726271 19.7823965,41.8744578 21.3461564,40.3106978 L27,34.6568542 L32.6538436,40.3106978 C34.2176035,41.8744578 36.7547899,41.8726271 38.3137085,40.3137085 C39.8758057,38.7516113 39.8771021,36.2202479 38.3106978,34.6538436 L32.6568542,29 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z\\\" id=\\\"Oval-2\\\" sketch:type=\\\"MSShapeGroup\\\"></path>\\n        </g>\\n      </g>\\n    </svg>\\n  </div>\\n</div>\"\n    };\n\n    extend = function() {\n      var key, object, objects, target, val, _i, _len;\n      target = arguments[0], objects = 2 <= arguments.length ? __slice.call(arguments, 1) : [];\n      for (_i = 0, _len = objects.length; _i < _len; _i++) {\n        object = objects[_i];\n        for (key in object) {\n          val = object[key];\n          target[key] = val;\n        }\n      }\n      return target;\n    };\n\n    function Dropzone(element, options) {\n      var elementOptions, fallback, _ref;\n      this.element = element;\n      this.version = Dropzone.version;\n      this.defaultOptions.previewTemplate = this.defaultOptions.previewTemplate.replace(/\\n*/g, \"\");\n      this.clickableElements = [];\n      this.listeners = [];\n      this.files = [];\n      if (typeof this.element === \"string\") {\n        this.element = document.querySelector(this.element);\n      }\n      if (!(this.element && (this.element.nodeType != null))) {\n        throw new Error(\"Invalid dropzone element.\");\n      }\n      if (this.element.dropzone) {\n        throw new Error(\"Dropzone already attached.\");\n      }\n      Dropzone.instances.push(this);\n      this.element.dropzone = this;\n      elementOptions = (_ref = Dropzone.optionsForElement(this.element)) != null ? _ref : {};\n      this.options = extend({}, this.defaultOptions, elementOptions, options != null ? options : {});\n      if (this.options.forceFallback || !Dropzone.isBrowserSupported()) {\n        return this.options.fallback.call(this);\n      }\n      if (this.options.url == null) {\n        this.options.url = this.element.getAttribute(\"action\");\n      }\n      if (!this.options.url) {\n        throw new Error(\"No URL provided.\");\n      }\n      if (this.options.acceptedFiles && this.options.acceptedMimeTypes) {\n        throw new Error(\"You can't provide both 'acceptedFiles' and 'acceptedMimeTypes'. 'acceptedMimeTypes' is deprecated.\");\n      }\n      if (this.options.acceptedMimeTypes) {\n        this.options.acceptedFiles = this.options.acceptedMimeTypes;\n        delete this.options.acceptedMimeTypes;\n      }\n      this.options.method = this.options.method.toUpperCase();\n      if ((fallback = this.getExistingFallback()) && fallback.parentNode) {\n        fallback.parentNode.removeChild(fallback);\n      }\n      if (this.options.previewsContainer !== false) {\n        if (this.options.previewsContainer) {\n          this.previewsContainer = Dropzone.getElement(this.options.previewsContainer, \"previewsContainer\");\n        } else {\n          this.previewsContainer = this.element;\n        }\n      }\n      if (this.options.clickable) {\n        if (this.options.clickable === true) {\n          this.clickableElements = [this.element];\n        } else {\n          this.clickableElements = Dropzone.getElements(this.options.clickable, \"clickable\");\n        }\n      }\n      this.init();\n    }\n\n    Dropzone.prototype.getAcceptedFiles = function() {\n      var file, _i, _len, _ref, _results;\n      _ref = this.files;\n      _results = [];\n      for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n        file = _ref[_i];\n        if (file.accepted) {\n          _results.push(file);\n        }\n      }\n      return _results;\n    };\n\n    Dropzone.prototype.getRejectedFiles = function() {\n      var file, _i, _len, _ref, _results;\n      _ref = this.files;\n      _results = [];\n      for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n        file = _ref[_i];\n        if (!file.accepted) {\n          _results.push(file);\n        }\n      }\n      return _results;\n    };\n\n    Dropzone.prototype.getFilesWithStatus = function(status) {\n      var file, _i, _len, _ref, _results;\n      _ref = this.files;\n      _results = [];\n      for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n        file = _ref[_i];\n        if (file.status === status) {\n          _results.push(file);\n        }\n      }\n      return _results;\n    };\n\n    Dropzone.prototype.getQueuedFiles = function() {\n      return this.getFilesWithStatus(Dropzone.QUEUED);\n    };\n\n    Dropzone.prototype.getUploadingFiles = function() {\n      return this.getFilesWithStatus(Dropzone.UPLOADING);\n    };\n\n    Dropzone.prototype.getAddedFiles = function() {\n      return this.getFilesWithStatus(Dropzone.ADDED);\n    };\n\n    Dropzone.prototype.getActiveFiles = function() {\n      var file, _i, _len, _ref, _results;\n      _ref = this.files;\n      _results = [];\n      for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n        file = _ref[_i];\n        if (file.status === Dropzone.UPLOADING || file.status === Dropzone.QUEUED) {\n          _results.push(file);\n        }\n      }\n      return _results;\n    };\n\n    Dropzone.prototype.init = function() {\n      var eventName, noPropagation, setupHiddenFileInput, _i, _len, _ref, _ref1;\n      if (this.element.tagName === \"form\") {\n        this.element.setAttribute(\"enctype\", \"multipart/form-data\");\n      }\n      if (this.element.classList.contains(\"dropzone\") && !this.element.querySelector(\".dz-message\")) {\n        this.element.appendChild(Dropzone.createElement(\"<div class=\\\"dz-default dz-message\\\"><span>\" + this.options.dictDefaultMessage + \"</span></div>\"));\n      }\n      if (this.clickableElements.length) {\n        setupHiddenFileInput = (function(_this) {\n          return function() {\n            if (_this.hiddenFileInput) {\n              _this.hiddenFileInput.parentNode.removeChild(_this.hiddenFileInput);\n            }\n            _this.hiddenFileInput = document.createElement(\"input\");\n            _this.hiddenFileInput.setAttribute(\"type\", \"file\");\n            if ((_this.options.maxFiles == null) || _this.options.maxFiles > 1) {\n              _this.hiddenFileInput.setAttribute(\"multiple\", \"multiple\");\n            }\n            _this.hiddenFileInput.className = \"dz-hidden-input\";\n            if (_this.options.acceptedFiles != null) {\n              _this.hiddenFileInput.setAttribute(\"accept\", _this.options.acceptedFiles);\n            }\n            if (_this.options.capture != null) {\n              _this.hiddenFileInput.setAttribute(\"capture\", _this.options.capture);\n            }\n            _this.hiddenFileInput.style.visibility = \"hidden\";\n            _this.hiddenFileInput.style.position = \"absolute\";\n            _this.hiddenFileInput.style.top = \"0\";\n            _this.hiddenFileInput.style.left = \"0\";\n            _this.hiddenFileInput.style.height = \"0\";\n            _this.hiddenFileInput.style.width = \"0\";\n            document.querySelector(_this.options.hiddenInputContainer).appendChild(_this.hiddenFileInput);\n            return _this.hiddenFileInput.addEventListener(\"change\", function() {\n              var file, files, _i, _len;\n              files = _this.hiddenFileInput.files;\n              if (files.length) {\n                for (_i = 0, _len = files.length; _i < _len; _i++) {\n                  file = files[_i];\n                  _this.addFile(file);\n                }\n              }\n              _this.emit(\"addedfiles\", files);\n              return setupHiddenFileInput();\n            });\n          };\n        })(this);\n        setupHiddenFileInput();\n      }\n      this.URL = (_ref = window.URL) != null ? _ref : window.webkitURL;\n      _ref1 = this.events;\n      for (_i = 0, _len = _ref1.length; _i < _len; _i++) {\n        eventName = _ref1[_i];\n        this.on(eventName, this.options[eventName]);\n      }\n      this.on(\"uploadprogress\", (function(_this) {\n        return function() {\n          return _this.updateTotalUploadProgress();\n        };\n      })(this));\n      this.on(\"removedfile\", (function(_this) {\n        return function() {\n          return _this.updateTotalUploadProgress();\n        };\n      })(this));\n      this.on(\"canceled\", (function(_this) {\n        return function(file) {\n          return _this.emit(\"complete\", file);\n        };\n      })(this));\n      this.on(\"complete\", (function(_this) {\n        return function(file) {\n          if (_this.getAddedFiles().length === 0 && _this.getUploadingFiles().length === 0 && _this.getQueuedFiles().length === 0) {\n            return setTimeout((function() {\n              return _this.emit(\"queuecomplete\");\n            }), 0);\n          }\n        };\n      })(this));\n      noPropagation = function(e) {\n        e.stopPropagation();\n        if (e.preventDefault) {\n          return e.preventDefault();\n        } else {\n          return e.returnValue = false;\n        }\n      };\n      this.listeners = [\n        {\n          element: this.element,\n          events: {\n            \"dragstart\": (function(_this) {\n              return function(e) {\n                return _this.emit(\"dragstart\", e);\n              };\n            })(this),\n            \"dragenter\": (function(_this) {\n              return function(e) {\n                noPropagation(e);\n                return _this.emit(\"dragenter\", e);\n              };\n            })(this),\n            \"dragover\": (function(_this) {\n              return function(e) {\n                var efct;\n                try {\n                  efct = e.dataTransfer.effectAllowed;\n                } catch (_error) {}\n                e.dataTransfer.dropEffect = 'move' === efct || 'linkMove' === efct ? 'move' : 'copy';\n                noPropagation(e);\n                return _this.emit(\"dragover\", e);\n              };\n            })(this),\n            \"dragleave\": (function(_this) {\n              return function(e) {\n                return _this.emit(\"dragleave\", e);\n              };\n            })(this),\n            \"drop\": (function(_this) {\n              return function(e) {\n                noPropagation(e);\n                return _this.drop(e);\n              };\n            })(this),\n            \"dragend\": (function(_this) {\n              return function(e) {\n                return _this.emit(\"dragend\", e);\n              };\n            })(this)\n          }\n        }\n      ];\n      this.clickableElements.forEach((function(_this) {\n        return function(clickableElement) {\n          return _this.listeners.push({\n            element: clickableElement,\n            events: {\n              \"click\": function(evt) {\n                if ((clickableElement !== _this.element) || (evt.target === _this.element || Dropzone.elementInside(evt.target, _this.element.querySelector(\".dz-message\")))) {\n                  _this.hiddenFileInput.click();\n                }\n                return true;\n              }\n            }\n          });\n        };\n      })(this));\n      this.enable();\n      return this.options.init.call(this);\n    };\n\n    Dropzone.prototype.destroy = function() {\n      var _ref;\n      this.disable();\n      this.removeAllFiles(true);\n      if ((_ref = this.hiddenFileInput) != null ? _ref.parentNode : void 0) {\n        this.hiddenFileInput.parentNode.removeChild(this.hiddenFileInput);\n        this.hiddenFileInput = null;\n      }\n      delete this.element.dropzone;\n      return Dropzone.instances.splice(Dropzone.instances.indexOf(this), 1);\n    };\n\n    Dropzone.prototype.updateTotalUploadProgress = function() {\n      var activeFiles, file, totalBytes, totalBytesSent, totalUploadProgress, _i, _len, _ref;\n      totalBytesSent = 0;\n      totalBytes = 0;\n      activeFiles = this.getActiveFiles();\n      if (activeFiles.length) {\n        _ref = this.getActiveFiles();\n        for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n          file = _ref[_i];\n          totalBytesSent += file.upload.bytesSent;\n          totalBytes += file.upload.total;\n        }\n        totalUploadProgress = 100 * totalBytesSent / totalBytes;\n      } else {\n        totalUploadProgress = 100;\n      }\n      return this.emit(\"totaluploadprogress\", totalUploadProgress, totalBytes, totalBytesSent);\n    };\n\n    Dropzone.prototype._getParamName = function(n) {\n      if (typeof this.options.paramName === \"function\") {\n        return this.options.paramName(n);\n      } else {\n        return \"\" + this.options.paramName + (this.options.uploadMultiple ? \"[\" + n + \"]\" : \"\");\n      }\n    };\n\n    Dropzone.prototype._renameFilename = function(name) {\n      if (typeof this.options.renameFilename !== \"function\") {\n        return name;\n      }\n      return this.options.renameFilename(name);\n    };\n\n    Dropzone.prototype.getFallbackForm = function() {\n      var existingFallback, fields, fieldsString, form;\n      if (existingFallback = this.getExistingFallback()) {\n        return existingFallback;\n      }\n      fieldsString = \"<div class=\\\"dz-fallback\\\">\";\n      if (this.options.dictFallbackText) {\n        fieldsString += \"<p>\" + this.options.dictFallbackText + \"</p>\";\n      }\n      fieldsString += \"<input type=\\\"file\\\" name=\\\"\" + (this._getParamName(0)) + \"\\\" \" + (this.options.uploadMultiple ? 'multiple=\"multiple\"' : void 0) + \" /><input type=\\\"submit\\\" value=\\\"Upload!\\\"></div>\";\n      fields = Dropzone.createElement(fieldsString);\n      if (this.element.tagName !== \"FORM\") {\n        form = Dropzone.createElement(\"<form action=\\\"\" + this.options.url + \"\\\" enctype=\\\"multipart/form-data\\\" method=\\\"\" + this.options.method + \"\\\"></form>\");\n        form.appendChild(fields);\n      } else {\n        this.element.setAttribute(\"enctype\", \"multipart/form-data\");\n        this.element.setAttribute(\"method\", this.options.method);\n      }\n      return form != null ? form : fields;\n    };\n\n    Dropzone.prototype.getExistingFallback = function() {\n      var fallback, getFallback, tagName, _i, _len, _ref;\n      getFallback = function(elements) {\n        var el, _i, _len;\n        for (_i = 0, _len = elements.length; _i < _len; _i++) {\n          el = elements[_i];\n          if (/(^| )fallback($| )/.test(el.className)) {\n            return el;\n          }\n        }\n      };\n      _ref = [\"div\", \"form\"];\n      for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n        tagName = _ref[_i];\n        if (fallback = getFallback(this.element.getElementsByTagName(tagName))) {\n          return fallback;\n        }\n      }\n    };\n\n    Dropzone.prototype.setupEventListeners = function() {\n      var elementListeners, event, listener, _i, _len, _ref, _results;\n      _ref = this.listeners;\n      _results = [];\n      for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n        elementListeners = _ref[_i];\n        _results.push((function() {\n          var _ref1, _results1;\n          _ref1 = elementListeners.events;\n          _results1 = [];\n          for (event in _ref1) {\n            listener = _ref1[event];\n            _results1.push(elementListeners.element.addEventListener(event, listener, false));\n          }\n          return _results1;\n        })());\n      }\n      return _results;\n    };\n\n    Dropzone.prototype.removeEventListeners = function() {\n      var elementListeners, event, listener, _i, _len, _ref, _results;\n      _ref = this.listeners;\n      _results = [];\n      for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n        elementListeners = _ref[_i];\n        _results.push((function() {\n          var _ref1, _results1;\n          _ref1 = elementListeners.events;\n          _results1 = [];\n          for (event in _ref1) {\n            listener = _ref1[event];\n            _results1.push(elementListeners.element.removeEventListener(event, listener, false));\n          }\n          return _results1;\n        })());\n      }\n      return _results;\n    };\n\n    Dropzone.prototype.disable = function() {\n      var file, _i, _len, _ref, _results;\n      this.clickableElements.forEach(function(element) {\n        return element.classList.remove(\"dz-clickable\");\n      });\n      this.removeEventListeners();\n      _ref = this.files;\n      _results = [];\n      for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n        file = _ref[_i];\n        _results.push(this.cancelUpload(file));\n      }\n      return _results;\n    };\n\n    Dropzone.prototype.enable = function() {\n      this.clickableElements.forEach(function(element) {\n        return element.classList.add(\"dz-clickable\");\n      });\n      return this.setupEventListeners();\n    };\n\n    Dropzone.prototype.filesize = function(size) {\n      var cutoff, i, selectedSize, selectedUnit, unit, units, _i, _len;\n      selectedSize = 0;\n      selectedUnit = \"b\";\n      if (size > 0) {\n        units = ['TB', 'GB', 'MB', 'KB', 'b'];\n        for (i = _i = 0, _len = units.length; _i < _len; i = ++_i) {\n          unit = units[i];\n          cutoff = Math.pow(this.options.filesizeBase, 4 - i) / 10;\n          if (size >= cutoff) {\n            selectedSize = size / Math.pow(this.options.filesizeBase, 4 - i);\n            selectedUnit = unit;\n            break;\n          }\n        }\n        selectedSize = Math.round(10 * selectedSize) / 10;\n      }\n      return \"<strong>\" + selectedSize + \"</strong> \" + selectedUnit;\n    };\n\n    Dropzone.prototype._updateMaxFilesReachedClass = function() {\n      if ((this.options.maxFiles != null) && this.getAcceptedFiles().length >= this.options.maxFiles) {\n        if (this.getAcceptedFiles().length === this.options.maxFiles) {\n          this.emit('maxfilesreached', this.files);\n        }\n        return this.element.classList.add(\"dz-max-files-reached\");\n      } else {\n        return this.element.classList.remove(\"dz-max-files-reached\");\n      }\n    };\n\n    Dropzone.prototype.drop = function(e) {\n      var files, items;\n      if (!e.dataTransfer) {\n        return;\n      }\n      this.emit(\"drop\", e);\n      files = e.dataTransfer.files;\n      this.emit(\"addedfiles\", files);\n      if (files.length) {\n        items = e.dataTransfer.items;\n        if (items && items.length && (items[0].webkitGetAsEntry != null)) {\n          this._addFilesFromItems(items);\n        } else {\n          this.handleFiles(files);\n        }\n      }\n    };\n\n    Dropzone.prototype.paste = function(e) {\n      var items, _ref;\n      if ((e != null ? (_ref = e.clipboardData) != null ? _ref.items : void 0 : void 0) == null) {\n        return;\n      }\n      this.emit(\"paste\", e);\n      items = e.clipboardData.items;\n      if (items.length) {\n        return this._addFilesFromItems(items);\n      }\n    };\n\n    Dropzone.prototype.handleFiles = function(files) {\n      var file, _i, _len, _results;\n      _results = [];\n      for (_i = 0, _len = files.length; _i < _len; _i++) {\n        file = files[_i];\n        _results.push(this.addFile(file));\n      }\n      return _results;\n    };\n\n    Dropzone.prototype._addFilesFromItems = function(items) {\n      var entry, item, _i, _len, _results;\n      _results = [];\n      for (_i = 0, _len = items.length; _i < _len; _i++) {\n        item = items[_i];\n        if ((item.webkitGetAsEntry != null) && (entry = item.webkitGetAsEntry())) {\n          if (entry.isFile) {\n            _results.push(this.addFile(item.getAsFile()));\n          } else if (entry.isDirectory) {\n            _results.push(this._addFilesFromDirectory(entry, entry.name));\n          } else {\n            _results.push(void 0);\n          }\n        } else if (item.getAsFile != null) {\n          if ((item.kind == null) || item.kind === \"file\") {\n            _results.push(this.addFile(item.getAsFile()));\n          } else {\n            _results.push(void 0);\n          }\n        } else {\n          _results.push(void 0);\n        }\n      }\n      return _results;\n    };\n\n    Dropzone.prototype._addFilesFromDirectory = function(directory, path) {\n      var dirReader, errorHandler, readEntries;\n      dirReader = directory.createReader();\n      errorHandler = function(error) {\n        return typeof console !== \"undefined\" && console !== null ? typeof console.log === \"function\" ? console.log(error) : void 0 : void 0;\n      };\n      readEntries = (function(_this) {\n        return function() {\n          return dirReader.readEntries(function(entries) {\n            var entry, _i, _len;\n            if (entries.length > 0) {\n              for (_i = 0, _len = entries.length; _i < _len; _i++) {\n                entry = entries[_i];\n                if (entry.isFile) {\n                  entry.file(function(file) {\n                    if (_this.options.ignoreHiddenFiles && file.name.substring(0, 1) === '.') {\n                      return;\n                    }\n                    file.fullPath = \"\" + path + \"/\" + file.name;\n                    return _this.addFile(file);\n                  });\n                } else if (entry.isDirectory) {\n                  _this._addFilesFromDirectory(entry, \"\" + path + \"/\" + entry.name);\n                }\n              }\n              readEntries();\n            }\n            return null;\n          }, errorHandler);\n        };\n      })(this);\n      return readEntries();\n    };\n\n    Dropzone.prototype.accept = function(file, done) {\n      if (file.size > this.options.maxFilesize * 1024 * 1024) {\n        return done(this.options.dictFileTooBig.replace(\"{{filesize}}\", Math.round(file.size / 1024 / 10.24) / 100).replace(\"{{maxFilesize}}\", this.options.maxFilesize));\n      } else if (!Dropzone.isValidFile(file, this.options.acceptedFiles)) {\n        return done(this.options.dictInvalidFileType);\n      } else if ((this.options.maxFiles != null) && this.getAcceptedFiles().length >= this.options.maxFiles) {\n        done(this.options.dictMaxFilesExceeded.replace(\"{{maxFiles}}\", this.options.maxFiles));\n        return this.emit(\"maxfilesexceeded\", file);\n      } else {\n        return this.options.accept.call(this, file, done);\n      }\n    };\n\n    Dropzone.prototype.addFile = function(file) {\n      file.upload = {\n        progress: 0,\n        total: file.size,\n        bytesSent: 0\n      };\n      this.files.push(file);\n      file.status = Dropzone.ADDED;\n      this.emit(\"addedfile\", file);\n      this._enqueueThumbnail(file);\n      return this.accept(file, (function(_this) {\n        return function(error) {\n          if (error) {\n            file.accepted = false;\n            _this._errorProcessing([file], error);\n          } else {\n            file.accepted = true;\n            if (_this.options.autoQueue) {\n              _this.enqueueFile(file);\n            }\n          }\n          return _this._updateMaxFilesReachedClass();\n        };\n      })(this));\n    };\n\n    Dropzone.prototype.enqueueFiles = function(files) {\n      var file, _i, _len;\n      for (_i = 0, _len = files.length; _i < _len; _i++) {\n        file = files[_i];\n        this.enqueueFile(file);\n      }\n      return null;\n    };\n\n    Dropzone.prototype.enqueueFile = function(file) {\n      if (file.status === Dropzone.ADDED && file.accepted === true) {\n        file.status = Dropzone.QUEUED;\n        if (this.options.autoProcessQueue) {\n          return setTimeout(((function(_this) {\n            return function() {\n              return _this.processQueue();\n            };\n          })(this)), 0);\n        }\n      } else {\n        throw new Error(\"This file can't be queued because it has already been processed or was rejected.\");\n      }\n    };\n\n    Dropzone.prototype._thumbnailQueue = [];\n\n    Dropzone.prototype._processingThumbnail = false;\n\n    Dropzone.prototype._enqueueThumbnail = function(file) {\n      if (this.options.createImageThumbnails && file.type.match(/image.*/) && file.size <= this.options.maxThumbnailFilesize * 1024 * 1024) {\n        this._thumbnailQueue.push(file);\n        return setTimeout(((function(_this) {\n          return function() {\n            return _this._processThumbnailQueue();\n          };\n        })(this)), 0);\n      }\n    };\n\n    Dropzone.prototype._processThumbnailQueue = function() {\n      if (this._processingThumbnail || this._thumbnailQueue.length === 0) {\n        return;\n      }\n      this._processingThumbnail = true;\n      return this.createThumbnail(this._thumbnailQueue.shift(), (function(_this) {\n        return function() {\n          _this._processingThumbnail = false;\n          return _this._processThumbnailQueue();\n        };\n      })(this));\n    };\n\n    Dropzone.prototype.removeFile = function(file) {\n      if (file.status === Dropzone.UPLOADING) {\n        this.cancelUpload(file);\n      }\n      this.files = without(this.files, file);\n      this.emit(\"removedfile\", file);\n      if (this.files.length === 0) {\n        return this.emit(\"reset\");\n      }\n    };\n\n    Dropzone.prototype.removeAllFiles = function(cancelIfNecessary) {\n      var file, _i, _len, _ref;\n      if (cancelIfNecessary == null) {\n        cancelIfNecessary = false;\n      }\n      _ref = this.files.slice();\n      for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n        file = _ref[_i];\n        if (file.status !== Dropzone.UPLOADING || cancelIfNecessary) {\n          this.removeFile(file);\n        }\n      }\n      return null;\n    };\n\n    Dropzone.prototype.createThumbnail = function(file, callback) {\n      var fileReader;\n      fileReader = new FileReader;\n      fileReader.onload = (function(_this) {\n        return function() {\n          if (file.type === \"image/svg+xml\") {\n            _this.emit(\"thumbnail\", file, fileReader.result);\n            if (callback != null) {\n              callback();\n            }\n            return;\n          }\n          return _this.createThumbnailFromUrl(file, fileReader.result, callback);\n        };\n      })(this);\n      return fileReader.readAsDataURL(file);\n    };\n\n    Dropzone.prototype.createThumbnailFromUrl = function(file, imageUrl, callback, crossOrigin) {\n      var img;\n      img = document.createElement(\"img\");\n      if (crossOrigin) {\n        img.crossOrigin = crossOrigin;\n      }\n      img.onload = (function(_this) {\n        return function() {\n          var canvas, ctx, resizeInfo, thumbnail, _ref, _ref1, _ref2, _ref3;\n          file.width = img.width;\n          file.height = img.height;\n          resizeInfo = _this.options.resize.call(_this, file);\n          if (resizeInfo.trgWidth == null) {\n            resizeInfo.trgWidth = resizeInfo.optWidth;\n          }\n          if (resizeInfo.trgHeight == null) {\n            resizeInfo.trgHeight = resizeInfo.optHeight;\n          }\n          canvas = document.createElement(\"canvas\");\n          ctx = canvas.getContext(\"2d\");\n          canvas.width = resizeInfo.trgWidth;\n          canvas.height = resizeInfo.trgHeight;\n          drawImageIOSFix(ctx, img, (_ref = resizeInfo.srcX) != null ? _ref : 0, (_ref1 = resizeInfo.srcY) != null ? _ref1 : 0, resizeInfo.srcWidth, resizeInfo.srcHeight, (_ref2 = resizeInfo.trgX) != null ? _ref2 : 0, (_ref3 = resizeInfo.trgY) != null ? _ref3 : 0, resizeInfo.trgWidth, resizeInfo.trgHeight);\n          thumbnail = canvas.toDataURL(\"image/png\");\n          _this.emit(\"thumbnail\", file, thumbnail);\n          if (callback != null) {\n            return callback();\n          }\n        };\n      })(this);\n      if (callback != null) {\n        img.onerror = callback;\n      }\n      return img.src = imageUrl;\n    };\n\n    Dropzone.prototype.processQueue = function() {\n      var i, parallelUploads, processingLength, queuedFiles;\n      parallelUploads = this.options.parallelUploads;\n      processingLength = this.getUploadingFiles().length;\n      i = processingLength;\n      if (processingLength >= parallelUploads) {\n        return;\n      }\n      queuedFiles = this.getQueuedFiles();\n      if (!(queuedFiles.length > 0)) {\n        return;\n      }\n      if (this.options.uploadMultiple) {\n        return this.processFiles(queuedFiles.slice(0, parallelUploads - processingLength));\n      } else {\n        while (i < parallelUploads) {\n          if (!queuedFiles.length) {\n            return;\n          }\n          this.processFile(queuedFiles.shift());\n          i++;\n        }\n      }\n    };\n\n    Dropzone.prototype.processFile = function(file) {\n      return this.processFiles([file]);\n    };\n\n    Dropzone.prototype.processFiles = function(files) {\n      var file, _i, _len;\n      for (_i = 0, _len = files.length; _i < _len; _i++) {\n        file = files[_i];\n        file.processing = true;\n        file.status = Dropzone.UPLOADING;\n        this.emit(\"processing\", file);\n      }\n      if (this.options.uploadMultiple) {\n        this.emit(\"processingmultiple\", files);\n      }\n      return this.uploadFiles(files);\n    };\n\n    Dropzone.prototype._getFilesWithXhr = function(xhr) {\n      var file, files;\n      return files = (function() {\n        var _i, _len, _ref, _results;\n        _ref = this.files;\n        _results = [];\n        for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n          file = _ref[_i];\n          if (file.xhr === xhr) {\n            _results.push(file);\n          }\n        }\n        return _results;\n      }).call(this);\n    };\n\n    Dropzone.prototype.cancelUpload = function(file) {\n      var groupedFile, groupedFiles, _i, _j, _len, _len1, _ref;\n      if (file.status === Dropzone.UPLOADING) {\n        groupedFiles = this._getFilesWithXhr(file.xhr);\n        for (_i = 0, _len = groupedFiles.length; _i < _len; _i++) {\n          groupedFile = groupedFiles[_i];\n          groupedFile.status = Dropzone.CANCELED;\n        }\n        file.xhr.abort();\n        for (_j = 0, _len1 = groupedFiles.length; _j < _len1; _j++) {\n          groupedFile = groupedFiles[_j];\n          this.emit(\"canceled\", groupedFile);\n        }\n        if (this.options.uploadMultiple) {\n          this.emit(\"canceledmultiple\", groupedFiles);\n        }\n      } else if ((_ref = file.status) === Dropzone.ADDED || _ref === Dropzone.QUEUED) {\n        file.status = Dropzone.CANCELED;\n        this.emit(\"canceled\", file);\n        if (this.options.uploadMultiple) {\n          this.emit(\"canceledmultiple\", [file]);\n        }\n      }\n      if (this.options.autoProcessQueue) {\n        return this.processQueue();\n      }\n    };\n\n    resolveOption = function() {\n      var args, option;\n      option = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];\n      if (typeof option === 'function') {\n        return option.apply(this, args);\n      }\n      return option;\n    };\n\n    Dropzone.prototype.uploadFile = function(file) {\n      return this.uploadFiles([file]);\n    };\n\n    Dropzone.prototype.uploadFiles = function(files) {\n      var file, formData, handleError, headerName, headerValue, headers, i, input, inputName, inputType, key, method, option, progressObj, response, updateProgress, url, value, xhr, _i, _j, _k, _l, _len, _len1, _len2, _len3, _m, _ref, _ref1, _ref2, _ref3, _ref4, _ref5;\n      xhr = new XMLHttpRequest();\n      for (_i = 0, _len = files.length; _i < _len; _i++) {\n        file = files[_i];\n        file.xhr = xhr;\n      }\n      method = resolveOption(this.options.method, files);\n      url = resolveOption(this.options.url, files);\n      xhr.open(method, url, true);\n      xhr.withCredentials = !!this.options.withCredentials;\n      response = null;\n      handleError = (function(_this) {\n        return function() {\n          var _j, _len1, _results;\n          _results = [];\n          for (_j = 0, _len1 = files.length; _j < _len1; _j++) {\n            file = files[_j];\n            _results.push(_this._errorProcessing(files, response || _this.options.dictResponseError.replace(\"{{statusCode}}\", xhr.status), xhr));\n          }\n          return _results;\n        };\n      })(this);\n      updateProgress = (function(_this) {\n        return function(e) {\n          var allFilesFinished, progress, _j, _k, _l, _len1, _len2, _len3, _results;\n          if (e != null) {\n            progress = 100 * e.loaded / e.total;\n            for (_j = 0, _len1 = files.length; _j < _len1; _j++) {\n              file = files[_j];\n              file.upload = {\n                progress: progress,\n                total: e.total,\n                bytesSent: e.loaded\n              };\n            }\n          } else {\n            allFilesFinished = true;\n            progress = 100;\n            for (_k = 0, _len2 = files.length; _k < _len2; _k++) {\n              file = files[_k];\n              if (!(file.upload.progress === 100 && file.upload.bytesSent === file.upload.total)) {\n                allFilesFinished = false;\n              }\n              file.upload.progress = progress;\n              file.upload.bytesSent = file.upload.total;\n            }\n            if (allFilesFinished) {\n              return;\n            }\n          }\n          _results = [];\n          for (_l = 0, _len3 = files.length; _l < _len3; _l++) {\n            file = files[_l];\n            _results.push(_this.emit(\"uploadprogress\", file, progress, file.upload.bytesSent));\n          }\n          return _results;\n        };\n      })(this);\n      xhr.onload = (function(_this) {\n        return function(e) {\n          var _ref;\n          if (files[0].status === Dropzone.CANCELED) {\n            return;\n          }\n          if (xhr.readyState !== 4) {\n            return;\n          }\n          response = xhr.responseText;\n          if (xhr.getResponseHeader(\"content-type\") && ~xhr.getResponseHeader(\"content-type\").indexOf(\"application/json\")) {\n            try {\n              response = JSON.parse(response);\n            } catch (_error) {\n              e = _error;\n              response = \"Invalid JSON response from server.\";\n            }\n          }\n          updateProgress();\n          if (!((200 <= (_ref = xhr.status) && _ref < 300))) {\n            return handleError();\n          } else {\n            return _this._finished(files, response, e);\n          }\n        };\n      })(this);\n      xhr.onerror = (function(_this) {\n        return function() {\n          if (files[0].status === Dropzone.CANCELED) {\n            return;\n          }\n          return handleError();\n        };\n      })(this);\n      progressObj = (_ref = xhr.upload) != null ? _ref : xhr;\n      progressObj.onprogress = updateProgress;\n      headers = {\n        \"Accept\": \"application/json\",\n        \"Cache-Control\": \"no-cache\",\n        \"X-Requested-With\": \"XMLHttpRequest\"\n      };\n      if (this.options.headers) {\n        extend(headers, this.options.headers);\n      }\n      for (headerName in headers) {\n        headerValue = headers[headerName];\n        if (headerValue) {\n          xhr.setRequestHeader(headerName, headerValue);\n        }\n      }\n      formData = new FormData();\n      if (this.options.params) {\n        _ref1 = this.options.params;\n        for (key in _ref1) {\n          value = _ref1[key];\n          formData.append(key, value);\n        }\n      }\n      for (_j = 0, _len1 = files.length; _j < _len1; _j++) {\n        file = files[_j];\n        this.emit(\"sending\", file, xhr, formData);\n      }\n      if (this.options.uploadMultiple) {\n        this.emit(\"sendingmultiple\", files, xhr, formData);\n      }\n      if (this.element.tagName === \"FORM\") {\n        _ref2 = this.element.querySelectorAll(\"input, textarea, select, button\");\n        for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {\n          input = _ref2[_k];\n          inputName = input.getAttribute(\"name\");\n          inputType = input.getAttribute(\"type\");\n          if (input.tagName === \"SELECT\" && input.hasAttribute(\"multiple\")) {\n            _ref3 = input.options;\n            for (_l = 0, _len3 = _ref3.length; _l < _len3; _l++) {\n              option = _ref3[_l];\n              if (option.selected) {\n                formData.append(inputName, option.value);\n              }\n            }\n          } else if (!inputType || ((_ref4 = inputType.toLowerCase()) !== \"checkbox\" && _ref4 !== \"radio\") || input.checked) {\n            formData.append(inputName, input.value);\n          }\n        }\n      }\n      for (i = _m = 0, _ref5 = files.length - 1; 0 <= _ref5 ? _m <= _ref5 : _m >= _ref5; i = 0 <= _ref5 ? ++_m : --_m) {\n        formData.append(this._getParamName(i), files[i], this._renameFilename(files[i].name));\n      }\n      return this.submitRequest(xhr, formData, files);\n    };\n\n    Dropzone.prototype.submitRequest = function(xhr, formData, files) {\n      return xhr.send(formData);\n    };\n\n    Dropzone.prototype._finished = function(files, responseText, e) {\n      var file, _i, _len;\n      for (_i = 0, _len = files.length; _i < _len; _i++) {\n        file = files[_i];\n        file.status = Dropzone.SUCCESS;\n        this.emit(\"success\", file, responseText, e);\n        this.emit(\"complete\", file);\n      }\n      if (this.options.uploadMultiple) {\n        this.emit(\"successmultiple\", files, responseText, e);\n        this.emit(\"completemultiple\", files);\n      }\n      if (this.options.autoProcessQueue) {\n        return this.processQueue();\n      }\n    };\n\n    Dropzone.prototype._errorProcessing = function(files, message, xhr) {\n      var file, _i, _len;\n      for (_i = 0, _len = files.length; _i < _len; _i++) {\n        file = files[_i];\n        file.status = Dropzone.ERROR;\n        this.emit(\"error\", file, message, xhr);\n        this.emit(\"complete\", file);\n      }\n      if (this.options.uploadMultiple) {\n        this.emit(\"errormultiple\", files, message, xhr);\n        this.emit(\"completemultiple\", files);\n      }\n      if (this.options.autoProcessQueue) {\n        return this.processQueue();\n      }\n    };\n\n    return Dropzone;\n\n  })(Emitter);\n\n  Dropzone.version = \"4.3.0\";\n\n  Dropzone.options = {};\n\n  Dropzone.optionsForElement = function(element) {\n    if (element.getAttribute(\"id\")) {\n      return Dropzone.options[camelize(element.getAttribute(\"id\"))];\n    } else {\n      return void 0;\n    }\n  };\n\n  Dropzone.instances = [];\n\n  Dropzone.forElement = function(element) {\n    if (typeof element === \"string\") {\n      element = document.querySelector(element);\n    }\n    if ((element != null ? element.dropzone : void 0) == null) {\n      throw new Error(\"No Dropzone found for given element. This is probably because you're trying to access it before Dropzone had the time to initialize. Use the `init` option to setup any additional observers on your Dropzone.\");\n    }\n    return element.dropzone;\n  };\n\n  Dropzone.autoDiscover = true;\n\n  Dropzone.discover = function() {\n    var checkElements, dropzone, dropzones, _i, _len, _results;\n    if (document.querySelectorAll) {\n      dropzones = document.querySelectorAll(\".dropzone\");\n    } else {\n      dropzones = [];\n      checkElements = function(elements) {\n        var el, _i, _len, _results;\n        _results = [];\n        for (_i = 0, _len = elements.length; _i < _len; _i++) {\n          el = elements[_i];\n          if (/(^| )dropzone($| )/.test(el.className)) {\n            _results.push(dropzones.push(el));\n          } else {\n            _results.push(void 0);\n          }\n        }\n        return _results;\n      };\n      checkElements(document.getElementsByTagName(\"div\"));\n      checkElements(document.getElementsByTagName(\"form\"));\n    }\n    _results = [];\n    for (_i = 0, _len = dropzones.length; _i < _len; _i++) {\n      dropzone = dropzones[_i];\n      if (Dropzone.optionsForElement(dropzone) !== false) {\n        _results.push(new Dropzone(dropzone));\n      } else {\n        _results.push(void 0);\n      }\n    }\n    return _results;\n  };\n\n  Dropzone.blacklistedBrowsers = [/opera.*Macintosh.*version\\/12/i];\n\n  Dropzone.isBrowserSupported = function() {\n    var capableBrowser, regex, _i, _len, _ref;\n    capableBrowser = true;\n    if (window.File && window.FileReader && window.FileList && window.Blob && window.FormData && document.querySelector) {\n      if (!(\"classList\" in document.createElement(\"a\"))) {\n        capableBrowser = false;\n      } else {\n        _ref = Dropzone.blacklistedBrowsers;\n        for (_i = 0, _len = _ref.length; _i < _len; _i++) {\n          regex = _ref[_i];\n          if (regex.test(navigator.userAgent)) {\n            capableBrowser = false;\n            continue;\n          }\n        }\n      }\n    } else {\n      capableBrowser = false;\n    }\n    return capableBrowser;\n  };\n\n  without = function(list, rejectedItem) {\n    var item, _i, _len, _results;\n    _results = [];\n    for (_i = 0, _len = list.length; _i < _len; _i++) {\n      item = list[_i];\n      if (item !== rejectedItem) {\n        _results.push(item);\n      }\n    }\n    return _results;\n  };\n\n  camelize = function(str) {\n    return str.replace(/[\\-_](\\w)/g, function(match) {\n      return match.charAt(1).toUpperCase();\n    });\n  };\n\n  Dropzone.createElement = function(string) {\n    var div;\n    div = document.createElement(\"div\");\n    div.innerHTML = string;\n    return div.childNodes[0];\n  };\n\n  Dropzone.elementInside = function(element, container) {\n    if (element === container) {\n      return true;\n    }\n    while (element = element.parentNode) {\n      if (element === container) {\n        return true;\n      }\n    }\n    return false;\n  };\n\n  Dropzone.getElement = function(el, name) {\n    var element;\n    if (typeof el === \"string\") {\n      element = document.querySelector(el);\n    } else if (el.nodeType != null) {\n      element = el;\n    }\n    if (element == null) {\n      throw new Error(\"Invalid `\" + name + \"` option provided. Please provide a CSS selector or a plain HTML element.\");\n    }\n    return element;\n  };\n\n  Dropzone.getElements = function(els, name) {\n    var e, el, elements, _i, _j, _len, _len1, _ref;\n    if (els instanceof Array) {\n      elements = [];\n      try {\n        for (_i = 0, _len = els.length; _i < _len; _i++) {\n          el = els[_i];\n          elements.push(this.getElement(el, name));\n        }\n      } catch (_error) {\n        e = _error;\n        elements = null;\n      }\n    } else if (typeof els === \"string\") {\n      elements = [];\n      _ref = document.querySelectorAll(els);\n      for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {\n        el = _ref[_j];\n        elements.push(el);\n      }\n    } else if (els.nodeType != null) {\n      elements = [els];\n    }\n    if (!((elements != null) && elements.length)) {\n      throw new Error(\"Invalid `\" + name + \"` option provided. Please provide a CSS selector, a plain HTML element or a list of those.\");\n    }\n    return elements;\n  };\n\n  Dropzone.confirm = function(question, accepted, rejected) {\n    if (window.confirm(question)) {\n      return accepted();\n    } else if (rejected != null) {\n      return rejected();\n    }\n  };\n\n  Dropzone.isValidFile = function(file, acceptedFiles) {\n    var baseMimeType, mimeType, validType, _i, _len;\n    if (!acceptedFiles) {\n      return true;\n    }\n    acceptedFiles = acceptedFiles.split(\",\");\n    mimeType = file.type;\n    baseMimeType = mimeType.replace(/\\/.*$/, \"\");\n    for (_i = 0, _len = acceptedFiles.length; _i < _len; _i++) {\n      validType = acceptedFiles[_i];\n      validType = validType.trim();\n      if (validType.charAt(0) === \".\") {\n        if (file.name.toLowerCase().indexOf(validType.toLowerCase(), file.name.length - validType.length) !== -1) {\n          return true;\n        }\n      } else if (/\\/\\*$/.test(validType)) {\n        if (baseMimeType === validType.replace(/\\/.*$/, \"\")) {\n          return true;\n        }\n      } else {\n        if (mimeType === validType) {\n          return true;\n        }\n      }\n    }\n    return false;\n  };\n\n  if (typeof jQuery !== \"undefined\" && jQuery !== null) {\n    jQuery.fn.dropzone = function(options) {\n      return this.each(function() {\n        return new Dropzone(this, options);\n      });\n    };\n  }\n\n  if (typeof module !== \"undefined\" && module !== null) {\n    module.exports = Dropzone;\n  } else {\n    window.Dropzone = Dropzone;\n  }\n\n  Dropzone.ADDED = \"added\";\n\n  Dropzone.QUEUED = \"queued\";\n\n  Dropzone.ACCEPTED = Dropzone.QUEUED;\n\n  Dropzone.UPLOADING = \"uploading\";\n\n  Dropzone.PROCESSING = Dropzone.UPLOADING;\n\n  Dropzone.CANCELED = \"canceled\";\n\n  Dropzone.ERROR = \"error\";\n\n  Dropzone.SUCCESS = \"success\";\n\n\n  /*\n  \n  Bugfix for iOS 6 and 7\n  Source: http://stackoverflow.com/questions/11929099/html5-canvas-drawimage-ratio-bug-ios\n  based on the work of https://github.com/stomita/ios-imagefile-megapixel\n   */\n\n  detectVerticalSquash = function(img) {\n    var alpha, canvas, ctx, data, ey, ih, iw, py, ratio, sy;\n    iw = img.naturalWidth;\n    ih = img.naturalHeight;\n    canvas = document.createElement(\"canvas\");\n    canvas.width = 1;\n    canvas.height = ih;\n    ctx = canvas.getContext(\"2d\");\n    ctx.drawImage(img, 0, 0);\n    data = ctx.getImageData(0, 0, 1, ih).data;\n    sy = 0;\n    ey = ih;\n    py = ih;\n    while (py > sy) {\n      alpha = data[(py - 1) * 4 + 3];\n      if (alpha === 0) {\n        ey = py;\n      } else {\n        sy = py;\n      }\n      py = (ey + sy) >> 1;\n    }\n    ratio = py / ih;\n    if (ratio === 0) {\n      return 1;\n    } else {\n      return ratio;\n    }\n  };\n\n  drawImageIOSFix = function(ctx, img, sx, sy, sw, sh, dx, dy, dw, dh) {\n    var vertSquashRatio;\n    vertSquashRatio = detectVerticalSquash(img);\n    return ctx.drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh / vertSquashRatio);\n  };\n\n\n  /*\n   * contentloaded.js\n   *\n   * Author: Diego Perini (diego.perini at gmail.com)\n   * Summary: cross-browser wrapper for DOMContentLoaded\n   * Updated: 20101020\n   * License: MIT\n   * Version: 1.2\n   *\n   * URL:\n   * http://javascript.nwbox.com/ContentLoaded/\n   * http://javascript.nwbox.com/ContentLoaded/MIT-LICENSE\n   */\n\n  contentLoaded = function(win, fn) {\n    var add, doc, done, init, poll, pre, rem, root, top;\n    done = false;\n    top = true;\n    doc = win.document;\n    root = doc.documentElement;\n    add = (doc.addEventListener ? \"addEventListener\" : \"attachEvent\");\n    rem = (doc.addEventListener ? \"removeEventListener\" : \"detachEvent\");\n    pre = (doc.addEventListener ? \"\" : \"on\");\n    init = function(e) {\n      if (e.type === \"readystatechange\" && doc.readyState !== \"complete\") {\n        return;\n      }\n      (e.type === \"load\" ? win : doc)[rem](pre + e.type, init, false);\n      if (!done && (done = true)) {\n        return fn.call(win, e.type || e);\n      }\n    };\n    poll = function() {\n      var e;\n      try {\n        root.doScroll(\"left\");\n      } catch (_error) {\n        e = _error;\n        setTimeout(poll, 50);\n        return;\n      }\n      return init(\"poll\");\n    };\n    if (doc.readyState !== \"complete\") {\n      if (doc.createEventObject && root.doScroll) {\n        try {\n          top = !win.frameElement;\n        } catch (_error) {}\n        if (top) {\n          poll();\n        }\n      }\n      doc[add](pre + \"DOMContentLoaded\", init, false);\n      doc[add](pre + \"readystatechange\", init, false);\n      return win[add](pre + \"load\", init, false);\n    }\n  };\n\n  Dropzone._autoDiscoverFunction = function() {\n    if (Dropzone.autoDiscover) {\n      return Dropzone.discover();\n    }\n  };\n\n  contentLoaded(window, Dropzone._autoDiscoverFunction);\n\n}).call(this);\n</script>\n<script>\n    Dropzone.autoDiscover = false;\n\n\n    // \"myAwesomeDropzone\" is the camelized version of the HTML element's ID\n    $(document).ready(function() {\n        setTimeout(function() {\n            $(\".dropzone\").dropzone({\n \n              paramName: \"myFile\", // The name that will be used to transfer the file\n              maxFilesize: 1024, // MB\n              accept: function(file, done) {\n                if (file.name == \"justinbieber.jpg\") {\n                  done(\"Naha, you don't.\");\n                }\n                else { done(); }\n              }\n            })\n        }, 2000)\n    })\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 840,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1ae6fea4.acbc51",
-        "type": "template",
-        "z": "d3fd0df1.6e3a9",
-        "name": "html",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "<script>\n    {{{dropzonejs}}}\n</script>\n<style>\n    {{{css}}}\n</style>\n\n\n\n<h1>Chọn một file database đuôi (sqlite3) và upload ở đây</h1>\n\n<form action=\"/uploadpretty_post\" class=\"dropzone\" method=\"post\" enctype=\"multipart/form-data\" id=\"dropzone\">\n  <div class=\"fallback\">\n    <input name=\"myFile\" type=\"file\" />\n    <input type=\"submit\" value=\"Submit\">\n  </div>\n</form>\n\n\n\n",
-        "output": "str",
-        "x": 690,
-        "y": 80,
-        "wires": [
-            [
-                "4ecbf59b.cc555c"
-            ]
-        ]
-    },
-    {
-        "id": "b75ab5c7.37cf18",
-        "type": "ui_button",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "group": "bba69035.e10bd",
-        "order": 1,
-        "width": 7,
-        "height": 1,
-        "passthru": false,
-        "label": "Kiểm tra database",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 230,
-        "y": 360,
-        "wires": [
-            [
-                "c608c504.96c978"
-            ]
-        ]
-    },
-    {
-        "id": "467e2bd8.3dee54",
-        "type": "ui_template",
-        "z": "d3fd0df1.6e3a9",
-        "group": "bba69035.e10bd",
-        "name": "",
-        "order": 7,
-        "width": 14,
-        "height": 7,
-        "format": "Đã điểm danh: <strong>{{msg.daDiemDanh}}</strong>\n<table>\n    <thead>\n        <th>STT</th>\n        <th>Tên</th>\n        <th>Vai trò</th>\n        <th>Hình</th>\n        <th>Mã thẻ</th>\n        <th>Điểm danh</th>\n    </thead>\n    <tbody>\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{row.ID}}</td>\n            <td>{{row.TEN}}</td>\n            <td>{{row.VAITRO}}</td>\n            <td>\n                            \n<img style=\"max-height: 100px;\" data-ng-src=\"data:image/gif;base64,{{row.IMAGE}}\" ng-if=\"row.IMAGE.length > 10\"></td>\n            <td>{{row.THE}}</td>\n            <td>{{row.MARKED}}</td>\n        </tr>\n    </tbody>\n</table>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 1080,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "258a5e7.f62e3a2",
-        "type": "sqlite",
-        "z": "d3fd0df1.6e3a9",
-        "mydb": "65ed25ac.c0499c",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 630,
-        "y": 360,
-        "wires": [
-            [
-                "a42acec1.516da",
-                "2d5f0a0.866dff6",
-                "2b5e51fc.2f661e"
-            ]
-        ]
-    },
-    {
-        "id": "c608c504.96c978",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Select ID,TEN,VAITRO,THE,MARKED from user",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 440,
-        "y": 360,
-        "wires": [
-            [
-                "258a5e7.f62e3a2"
-            ]
-        ]
-    },
-    {
-        "id": "a42acec1.516da",
-        "type": "debug",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 850,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "e93bb916.49cc18",
-        "type": "inject",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 260,
-        "y": 440,
-        "wires": [
-            [
-                "c608c504.96c978"
-            ]
-        ]
-    },
-    {
-        "id": "2d5f0a0.866dff6",
-        "type": "ui_text",
-        "z": "d3fd0df1.6e3a9",
-        "group": "bba69035.e10bd",
-        "order": 2,
-        "width": 7,
-        "height": 1,
-        "name": "",
-        "label": "Số Thành viên",
-        "format": "{{msg.payload.length}}",
-        "layout": "row-spread",
-        "x": 820,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "17acfff9.6dda",
-        "type": "ui_button",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "group": "bba69035.e10bd",
-        "order": 5,
-        "width": 13,
-        "height": 1,
-        "passthru": false,
-        "label": "Xuất excel để kiểm tra cuối ngày",
-        "tooltip": "",
-        "color": "red",
-        "bgcolor": "yellow",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 280,
-        "y": 540,
-        "wires": [
-            [
-                "f7ffcfc5.15946"
-            ]
-        ]
-    },
-    {
-        "id": "f7ffcfc5.15946",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Select ID,TEN,VAITRO,THE,MARKED from user",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "download_excel",
-                "pt": "msg",
-                "to": "1",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 540,
-        "wires": [
-            [
-                "fce8fa39.7a8b28"
-            ]
-        ]
-    },
-    {
-        "id": "fce8fa39.7a8b28",
-        "type": "sqlite",
-        "z": "d3fd0df1.6e3a9",
-        "mydb": "65ed25ac.c0499c",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 740,
-        "y": 540,
-        "wires": [
-            [
-                "92174d32.6ee3a",
-                "e529c795.31ab68"
-            ]
-        ]
-    },
-    {
-        "id": "92174d32.6ee3a",
-        "type": "excel",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "file": "public/excel.xlsx",
-        "x": 930,
-        "y": 540,
-        "wires": [
-            [
-                "26b47a91.714106"
-            ]
-        ]
-    },
-    {
-        "id": "26b47a91.714106",
-        "type": "ui_template",
-        "z": "d3fd0df1.6e3a9",
-        "group": "bba69035.e10bd",
-        "name": "",
-        "order": 6,
-        "width": 1,
-        "height": 1,
-        "format": "<script>\n\n(function(scope) {\n\n scope.$watch('msg', function (msg) { //watch for an incoming NR msg\n    if (msg.download_excel == 1) {\n        window.location='/excel.xlsx'\n    }\n     \n })\n})(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 1080,
-        "y": 540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6c4f1bb2.6c9d74",
-        "type": "sqlite",
-        "z": "d3fd0df1.6e3a9",
-        "mydb": "65ed25ac.c0499c",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 740,
-        "y": 600,
-        "wires": [
-            [
-                "c608c504.96c978"
-            ]
-        ]
-    },
-    {
-        "id": "683efa46.233d04",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "UPDATE user SET MARKED = NULL",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 520,
-        "y": 600,
-        "wires": [
-            [
-                "6c4f1bb2.6c9d74"
-            ]
-        ]
-    },
-    {
-        "id": "ba57c17c.91ed9",
-        "type": "ui_button",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "group": "5a71d509.19ad7c",
-        "order": 6,
-        "width": "4",
-        "height": 1,
-        "passthru": false,
-        "label": "Huỷ điểm danh toàn bộ - CẨN THẬN ",
-        "tooltip": "",
-        "color": "\byellow",
-        "bgcolor": "green",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 190,
-        "y": 600,
-        "wires": [
-            [
-                "683efa46.233d04"
-            ]
-        ]
-    },
-    {
-        "id": "ff617e5a.10f77",
-        "type": "ui_text_input",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "label": "Số thứ tự đại biểu cần sửa ",
-        "tooltip": "",
-        "group": "bba69035.e10bd",
-        "order": 8,
-        "width": 14,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "",
-        "x": 280,
-        "y": 700,
-        "wires": [
-            [
-                "51279c28.d0dbb4",
-                "59a4afa5.4d95f"
-            ]
-        ]
-    },
-    {
-        "id": "51279c28.d0dbb4",
-        "type": "function",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "func": "msg.topic = `select * from user where ID = '${msg.payload}'`\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 490,
-        "y": 700,
-        "wires": [
-            [
-                "c5890a1.18314f8"
-            ]
-        ]
-    },
-    {
-        "id": "83f67a5b.dda7b8",
-        "type": "ui_text_input",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "label": "Tên",
-        "tooltip": "",
-        "group": "bba69035.e10bd",
-        "order": 9,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "",
-        "x": 1010,
-        "y": 760,
-        "wires": [
-            [
-                "a5b5c650.3b1658"
-            ]
-        ]
-    },
-    {
-        "id": "dfbc801a.fa61c",
-        "type": "ui_text_input",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "label": "Vai trò",
-        "tooltip": "",
-        "group": "bba69035.e10bd",
-        "order": 10,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "",
-        "x": 1010,
-        "y": 800,
-        "wires": [
-            [
-                "7c8cb569.e0fb4c"
-            ]
-        ]
-    },
-    {
-        "id": "c5890a1.18314f8",
-        "type": "sqlite",
-        "z": "d3fd0df1.6e3a9",
-        "mydb": "65ed25ac.c0499c",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 660,
-        "y": 700,
-        "wires": [
-            [
-                "efd23278.7cc43",
-                "6d97d31c.cc689c",
-                "8362e528.d2a2e8",
-                "f383418b.cf2b8"
-            ]
-        ]
-    },
-    {
-        "id": "efd23278.7cc43",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload[0].TEN",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 860,
-        "y": 760,
-        "wires": [
-            [
-                "83f67a5b.dda7b8"
-            ]
-        ]
-    },
-    {
-        "id": "6d97d31c.cc689c",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload[0].VAITRO",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 860,
-        "y": 800,
-        "wires": [
-            [
-                "dfbc801a.fa61c"
-            ]
-        ]
-    },
-    {
-        "id": "a5b5c650.3b1658",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "TEN_CAN_SUA",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1210,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7c8cb569.e0fb4c",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "VAITRO_CAN_SUA",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1230,
-        "y": 800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f77bc25c.8e403",
-        "type": "function",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "func": "msg.topic = `UPDATE user SET TEN='${msg.TEN}', VAITRO='${msg.VAITRO}', IMAGE='${msg.IMAGE}' where ID = '${msg.ID}'`\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 550,
-        "y": 860,
-        "wires": [
-            [
-                "720376a5.3389b8"
-            ]
-        ]
-    },
-    {
-        "id": "59a4afa5.4d95f",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "ID_CAN_SUA",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 550,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "79f50fae.da754",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "ID",
-                "pt": "msg",
-                "to": "ID_CAN_SUA",
-                "tot": "global"
-            },
-            {
-                "t": "set",
-                "p": "VAITRO",
-                "pt": "msg",
-                "to": "VAITRO_CAN_SUA",
-                "tot": "global"
-            },
-            {
-                "t": "set",
-                "p": "TEN",
-                "pt": "msg",
-                "to": "TEN_CAN_SUA",
-                "tot": "global"
-            },
-            {
-                "t": "set",
-                "p": "IMAGE",
-                "pt": "msg",
-                "to": "IMAGE_CAN_SUA",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 400,
-        "y": 860,
-        "wires": [
-            [
-                "f77bc25c.8e403"
-            ]
-        ]
-    },
-    {
-        "id": "720376a5.3389b8",
-        "type": "sqlite",
-        "z": "d3fd0df1.6e3a9",
-        "mydb": "65ed25ac.c0499c",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 720,
-        "y": 860,
-        "wires": [
-            [
-                "c608c504.96c978"
-            ]
-        ]
-    },
-    {
-        "id": "654a9ade.1481c4",
-        "type": "ui_button",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "group": "bba69035.e10bd",
-        "order": 13,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Lưu lại tên mới nè nha chỗ đây nhấn vô please ",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 340,
-        "y": 960,
-        "wires": [
-            [
-                "79f50fae.da754"
-            ]
-        ]
-    },
-    {
-        "id": "8362e528.d2a2e8",
-        "type": "ui_template",
-        "z": "d3fd0df1.6e3a9",
-        "group": "bba69035.e10bd",
-        "name": "Hình đại diện",
-        "order": 11,
-        "width": 5,
-        "height": 4,
-        "format": "<img src=\"data:image/png;base64,{{msg.payload[0].IMAGE}}\">",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 850,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "847904c5.1d96f8",
-        "type": "inject",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "x": 390,
-        "y": 1100,
-        "wires": [
-            [
-                "1c8ed838.0de608"
-            ]
-        ]
-    },
-    {
-        "id": "1c8ed838.0de608",
-        "type": "template",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "field": "css",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "/*\n * The MIT License\n * Copyright (c) 2012 Matias Meno <m@tias.me>\n */\n@-webkit-keyframes passing-through {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30%, 70% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translateY(-40px);\n    -moz-transform: translateY(-40px);\n    -ms-transform: translateY(-40px);\n    -o-transform: translateY(-40px);\n    transform: translateY(-40px); } }\n@-moz-keyframes passing-through {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30%, 70% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translateY(-40px);\n    -moz-transform: translateY(-40px);\n    -ms-transform: translateY(-40px);\n    -o-transform: translateY(-40px);\n    transform: translateY(-40px); } }\n@keyframes passing-through {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30%, 70% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translateY(-40px);\n    -moz-transform: translateY(-40px);\n    -ms-transform: translateY(-40px);\n    -o-transform: translateY(-40px);\n    transform: translateY(-40px); } }\n@-webkit-keyframes slide-in {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); } }\n@-moz-keyframes slide-in {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); } }\n@keyframes slide-in {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); } }\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); }\n  10% {\n    -webkit-transform: scale(1.1);\n    -moz-transform: scale(1.1);\n    -ms-transform: scale(1.1);\n    -o-transform: scale(1.1);\n    transform: scale(1.1); }\n  20% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); } }\n@-moz-keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); }\n  10% {\n    -webkit-transform: scale(1.1);\n    -moz-transform: scale(1.1);\n    -ms-transform: scale(1.1);\n    -o-transform: scale(1.1);\n    transform: scale(1.1); }\n  20% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); } }\n@keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); }\n  10% {\n    -webkit-transform: scale(1.1);\n    -moz-transform: scale(1.1);\n    -ms-transform: scale(1.1);\n    -o-transform: scale(1.1);\n    transform: scale(1.1); }\n  20% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); } }\n.dropzone, .dropzone * {\n  box-sizing: border-box; }\n\n.dropzone {\n  min-height: 150px;\n  border: 2px solid rgba(0, 0, 0, 0.3);\n  background: white;\n  padding: 20px 20px; }\n  .dropzone.dz-clickable {\n    cursor: pointer; }\n    .dropzone.dz-clickable * {\n      cursor: default; }\n    .dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message * {\n      cursor: pointer; }\n  .dropzone.dz-started .dz-message {\n    display: none; }\n  .dropzone.dz-drag-hover {\n    border-style: solid; }\n    .dropzone.dz-drag-hover .dz-message {\n      opacity: 0.5; }\n  .dropzone .dz-message {\n    text-align: center;\n    margin: 2em 0; }\n  .dropzone .dz-preview {\n    position: relative;\n    display: inline-block;\n    vertical-align: top;\n    margin: 16px;\n    min-height: 100px; }\n    .dropzone .dz-preview:hover {\n      z-index: 1000; }\n      .dropzone .dz-preview:hover .dz-details {\n        opacity: 1; }\n    .dropzone .dz-preview.dz-file-preview .dz-image {\n      border-radius: 20px;\n      background: #999;\n      background: linear-gradient(to bottom, #eee, #ddd); }\n    .dropzone .dz-preview.dz-file-preview .dz-details {\n      opacity: 1; }\n    .dropzone .dz-preview.dz-image-preview {\n      background: white; }\n      .dropzone .dz-preview.dz-image-preview .dz-details {\n        -webkit-transition: opacity 0.2s linear;\n        -moz-transition: opacity 0.2s linear;\n        -ms-transition: opacity 0.2s linear;\n        -o-transition: opacity 0.2s linear;\n        transition: opacity 0.2s linear; }\n    .dropzone .dz-preview .dz-remove {\n      font-size: 14px;\n      text-align: center;\n      display: block;\n      cursor: pointer;\n      border: none; }\n      .dropzone .dz-preview .dz-remove:hover {\n        text-decoration: underline; }\n    .dropzone .dz-preview:hover .dz-details {\n      opacity: 1; }\n    .dropzone .dz-preview .dz-details {\n      z-index: 20;\n      position: absolute;\n      top: 0;\n      left: 0;\n      opacity: 0;\n      font-size: 13px;\n      min-width: 100%;\n      max-width: 100%;\n      padding: 2em 1em;\n      text-align: center;\n      color: rgba(0, 0, 0, 0.9);\n      line-height: 150%; }\n      .dropzone .dz-preview .dz-details .dz-size {\n        margin-bottom: 1em;\n        font-size: 16px; }\n      .dropzone .dz-preview .dz-details .dz-filename {\n        white-space: nowrap; }\n        .dropzone .dz-preview .dz-details .dz-filename:hover span {\n          border: 1px solid rgba(200, 200, 200, 0.8);\n          background-color: rgba(255, 255, 255, 0.8); }\n        .dropzone .dz-preview .dz-details .dz-filename:not(:hover) {\n          overflow: hidden;\n          text-overflow: ellipsis; }\n          .dropzone .dz-preview .dz-details .dz-filename:not(:hover) span {\n            border: 1px solid transparent; }\n      .dropzone .dz-preview .dz-details .dz-filename span, .dropzone .dz-preview .dz-details .dz-size span {\n        background-color: rgba(255, 255, 255, 0.4);\n        padding: 0 0.4em;\n        border-radius: 3px; }\n    .dropzone .dz-preview:hover .dz-image img {\n      -webkit-transform: scale(1.05, 1.05);\n      -moz-transform: scale(1.05, 1.05);\n      -ms-transform: scale(1.05, 1.05);\n      -o-transform: scale(1.05, 1.05);\n      transform: scale(1.05, 1.05);\n      -webkit-filter: blur(8px);\n      filter: blur(8px); }\n    .dropzone .dz-preview .dz-image {\n      border-radius: 20px;\n      overflow: hidden;\n      width: 120px;\n      height: 120px;\n      position: relative;\n      display: block;\n      z-index: 10; }\n      .dropzone .dz-preview .dz-image img {\n        display: block; }\n    .dropzone .dz-preview.dz-success .dz-success-mark {\n      -webkit-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -moz-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -ms-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -o-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1); }\n    .dropzone .dz-preview.dz-error .dz-error-mark {\n      opacity: 1;\n      -webkit-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -moz-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -ms-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -o-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1); }\n    .dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark {\n      pointer-events: none;\n      opacity: 0;\n      z-index: 500;\n      position: absolute;\n      display: block;\n      top: 50%;\n      left: 50%;\n      margin-left: -27px;\n      margin-top: -27px; }\n      .dropzone .dz-preview .dz-success-mark svg, .dropzone .dz-preview .dz-error-mark svg {\n        display: block;\n        width: 54px;\n        height: 54px; }\n    .dropzone .dz-preview.dz-processing .dz-progress {\n      opacity: 1;\n      -webkit-transition: all 0.2s linear;\n      -moz-transition: all 0.2s linear;\n      -ms-transition: all 0.2s linear;\n      -o-transition: all 0.2s linear;\n      transition: all 0.2s linear; }\n    .dropzone .dz-preview.dz-complete .dz-progress {\n      opacity: 0;\n      -webkit-transition: opacity 0.4s ease-in;\n      -moz-transition: opacity 0.4s ease-in;\n      -ms-transition: opacity 0.4s ease-in;\n      -o-transition: opacity 0.4s ease-in;\n      transition: opacity 0.4s ease-in; }\n    .dropzone .dz-preview:not(.dz-processing) .dz-progress {\n      -webkit-animation: pulse 6s ease infinite;\n      -moz-animation: pulse 6s ease infinite;\n      -ms-animation: pulse 6s ease infinite;\n      -o-animation: pulse 6s ease infinite;\n      animation: pulse 6s ease infinite; }\n    .dropzone .dz-preview .dz-progress {\n      opacity: 1;\n      z-index: 1000;\n      pointer-events: none;\n      position: absolute;\n      height: 16px;\n      left: 50%;`\n      top: 50%;\n      margin-top: -8px;\n      width: 80px;\n      margin-left: -40px;\n      background: rgba(255, 255, 255, 0.9);\n      -webkit-transform: scale(1);\n      border-radius: 8px;\n      overflow: hidden; }\n      .dropzone .dz-preview .dz-progress .dz-upload {\n        background: #333;\n        background: linear-gradient(to bottom, #666, #444);\n        position: absolute;\n        top: 0;\n        left: 0;\n        bottom: 0;\n        width: 0;\n        -webkit-transition: width 300ms ease-in-out;\n        -moz-transition: width 300ms ease-in-out;\n        -ms-transition: width 300ms ease-in-out;\n        -o-transition: width 300ms ease-in-out;\n        transition: width 300ms ease-in-out; }\n    .dropzone .dz-preview.dz-error .dz-error-message {\n      display: block; }\n    .dropzone .dz-preview.dz-error:hover .dz-error-message {\n      opacity: 1;\n      pointer-events: auto; }\n    .dropzone .dz-preview .dz-error-message {\n      pointer-events: none;\n      z-index: 1000;\n      position: absolute;\n      display: block;\n      display: none;\n      opacity: 0;\n      -webkit-transition: opacity 0.3s ease;\n      -moz-transition: opacity 0.3s ease;\n      -ms-transition: opacity 0.3s ease;\n      -o-transition: opacity 0.3s ease;\n      transition: opacity 0.3s ease;\n      border-radius: 8px;\n      font-size: 13px;\n      top: 130px;\n      left: -10px;\n      width: 140px;\n      background: #be2626;\n      background: linear-gradient(to bottom, #be2626, #a92222);\n      padding: 0.5em 1.2em;\n      color: white; }\n      .dropzone .dz-preview .dz-error-message:after {\n        content: '';\n        position: absolute;\n        top: -6px;\n        left: 64px;\n        width: 0;\n        height: 0;\n        border-left: 6px solid transparent;\n        border-right: 6px solid transparent;\n        border-bottom: 6px solid #be2626; }",
-        "output": "str",
-        "x": 550,
-        "y": 1100,
-        "wires": [
-            [
-                "6d6321f1.c86f5"
-            ]
-        ]
-    },
-    {
-        "id": "89775a23.781df8",
-        "type": "ui_template",
-        "z": "d3fd0df1.6e3a9",
-        "group": "bba69035.e10bd",
-        "name": "Upload ảnh đại diện mới",
-        "order": 12,
-        "width": 9,
-        "height": 4,
-        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 910,
-        "y": 1100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6d6321f1.c86f5",
-        "type": "template",
-        "z": "d3fd0df1.6e3a9",
-        "name": "html",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "<script>\n    {{{dropzonejs}}}\n</script>\n<style>\n    {{{css}}}\n</style>\n\n\n\n<h3>Đổi ảnh đại diện đại biểu</h3>\n\n<form action=\"/uploadpretty_post2\" class=\"dropzone\" method=\"post\" enctype=\"multipart/form-data\" id=\"dropzone2\">\n  <div class=\"fallback\">\n    <input name=\"myFile\" type=\"file\" />\n    <input type=\"submit\" value=\"Submit\">\n  </div>\n</form>\n\n\n\n",
-        "output": "str",
-        "x": 710,
-        "y": 1100,
-        "wires": [
-            [
-                "89775a23.781df8"
-            ]
-        ]
-    },
-    {
-        "id": "e285e604.41d018",
-        "type": "http in",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "url": "/uploadpretty_post2",
-        "method": "post",
-        "upload": true,
-        "swaggerDoc": "",
-        "x": 550,
-        "y": 1160,
-        "wires": [
-            [
-                "d4e7ebef.de0df8"
-            ]
-        ]
-    },
-    {
-        "id": "d4e7ebef.de0df8",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "req.files[0].buffer",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 760,
-        "y": 1160,
-        "wires": [
-            [
-                "1c7825c4.f87c3a"
-            ]
-        ]
-    },
-    {
-        "id": "f383418b.cf2b8",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload[0].IMAGE",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 860,
-        "y": 940,
-        "wires": [
-            [
-                "5be446f9.a619d8"
-            ]
-        ]
-    },
-    {
-        "id": "5be446f9.a619d8",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "IMAGE_CAN_SUA",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1220,
-        "y": 940,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a596661c.3cd428",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "IMAGE_CAN_SUA",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1200,
-        "y": 1160,
-        "wires": [
-            [
-                "33da9f15.3525d"
-            ]
-        ]
-    },
-    {
-        "id": "1c7825c4.f87c3a",
-        "type": "function",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "func": "msg.payload = msg.payload.toString('base64')\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 950,
-        "y": 1160,
-        "wires": [
-            [
-                "a596661c.3cd428"
-            ]
-        ]
-    },
-    {
-        "id": "33da9f15.3525d",
-        "type": "http response",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1410,
-        "y": 1160,
-        "wires": []
-    },
-    {
-        "id": "e529c795.31ab68",
-        "type": "debug",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 1000,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "2b5e51fc.2f661e",
-        "type": "function",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "func": "msg.daDiemDanh = 0\nfor (var i = 0; i < msg.payload.length;i++) {\n    if (msg.payload[i].MARKED) {\n        msg.daDiemDanh++\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 830,
-        "y": 360,
-        "wires": [
-            [
-                "467e2bd8.3dee54",
-                "ced6c28a.5bc2c"
-            ]
-        ]
-    },
-    {
-        "id": "c308641b.3c2218",
-        "type": "ui_template",
-        "z": "d3fd0df1.6e3a9",
-        "group": "5a71d509.19ad7c",
-        "name": "",
-        "order": 13,
-        "width": "0",
-        "height": "0",
-        "format": "<table>\n    <tr>\n        <th>STT</th>\n        <th>Tên</th>\n        <th>Vai trò</th>\n        <th>Hình</th>\n        <th>Mã thẻ</th>\n        <th>Điểm danh</th>\n    </tr>\n    <tbody>\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{row.ID}}</td>\n            <td>{{row.TEN}}</td>\n            <td>{{row.VAITRO}}</td>\n            <td>\n                            \n<img style=\"max-height: 100px;\" data-ng-src=\"data:image/gif;base64,{{row.IMAGE}}\" ng-if=\"row.IMAGE.length > 10\"></td>\n            <td>{{row.THE}}</td>\n            <td>{{row.MARKED}}</td>\n        </tr>\n    </tbody>\n</table>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 640,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a38e0498.0cfcc8",
-        "type": "ui_button",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "group": "bba69035.e10bd",
-        "order": 14,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Xem số người không điểm danh",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 130,
-        "y": 260,
-        "wires": [
-            [
-                "9e00f9fd.6f5138"
-            ]
-        ]
-    },
-    {
-        "id": "9e00f9fd.6f5138",
-        "type": "change",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "SELECT ID,TEN,VAITRO,THE FROM user WHERE MARKED is null",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 410,
-        "y": 260,
-        "wires": [
-            [
-                "c308641b.3c2218",
-                "258a5e7.f62e3a2"
-            ]
-        ]
-    },
-    {
-        "id": "15c33251.85e07e",
-        "type": "inject",
-        "z": "d3fd0df1.6e3a9",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "x": 250,
-        "y": 300,
-        "wires": [
-            [
-                "c608c504.96c978"
-            ]
-        ]
-    },
-    {
-        "id": "ced6c28a.5bc2c",
-        "type": "link out",
-        "z": "d3fd0df1.6e3a9",
-        "name": "Kết quả csdl thẻ",
-        "links": [
-            "74636741.a45a98"
-        ],
-        "x": 1015,
-        "y": 400,
-        "wires": []
-    },
-    {
         "id": "2da616f8.c9f45a",
         "type": "http request",
         "z": "75661525.55285c",
@@ -16919,6 +15343,480 @@
                 "d1851e7e.fb95a"
             ],
             []
+        ]
+    },
+    {
+        "id": "72f5a31c.804c7c",
+        "type": "json",
+        "z": "df28ea3.5589f18",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 165,
+        "y": 84,
+        "wires": [
+            [
+                "7b1dc5c4.3e7dec"
+            ]
+        ]
+    },
+    {
+        "id": "e834e65d.adb988",
+        "type": "switch",
+        "z": "df28ea3.5589f18",
+        "name": "Phân luồn",
+        "property": "relayId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "7",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 8,
+        "x": 825.9869575500488,
+        "y": 288.1562738418579,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7b1dc5c4.3e7dec",
+        "type": "function",
+        "z": "df28ea3.5589f18",
+        "name": "Lặp",
+        "func": "if (!msg.states) {\n    msg.states = msg.payload\n    msg.i = 0\n    return msg;\n} else {\n    msg.i++\n    if (msg.states[msg.i])\n        return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 327.89060974121094,
+        "y": 83.33600330352783,
+        "wires": [
+            [
+                "3f1c6d59.2af222"
+            ]
+        ]
+    },
+    {
+        "id": "3f1c6d59.2af222",
+        "type": "function",
+        "z": "df28ea3.5589f18",
+        "name": "Lấy trạng thái thiết bị",
+        "func": "msg.relayId = msg.i\nmsg.payload = msg.states[msg.i].state\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 477.89060974121094,
+        "y": 183.33600330352783,
+        "wires": [
+            [
+                "7b1dc5c4.3e7dec",
+                "e834e65d.adb988"
+            ]
+        ]
+    },
+    {
+        "id": "8666899.c75da78",
+        "type": "ui_gauge",
+        "z": "f9ca782b.055ff8",
+        "name": "Độ ẩm",
+        "group": "4f747312.49c61c",
+        "order": 3,
+        "width": "6",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Độ ẩm",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 860,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "d757a9c0.8417c8",
+        "type": "ui_gauge",
+        "z": "f9ca782b.055ff8",
+        "name": "Nhiệt độ",
+        "group": "4f747312.49c61c",
+        "order": 2,
+        "width": "6",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Nhiệt độ",
+        "label": "oC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 870,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "52c3731c.92f85c",
+        "type": "subflow:df28ea3.5589f18",
+        "z": "f9ca782b.055ff8",
+        "name": "",
+        "x": 630,
+        "y": 640,
+        "wires": [
+            [
+                "7020778.91adb88"
+            ],
+            [
+                "3e1f0a7a.ae2166"
+            ],
+            [
+                "d757a9c0.8417c8"
+            ],
+            [
+                "8666899.c75da78"
+            ],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "36075d67.f18362",
+        "type": "mqtt in",
+        "z": "f9ca782b.055ff8",
+        "name": "[MQTT-IN]iNut cảm biến - iNut CB",
+        "topic": "request/AqSGzOUyvdSsqMeAypNHSuMzGlf2/SkSRBkdcr/932f1ced412254f288d90d13d362fefe646073510043",
+        "qos": "2",
+        "broker": "34294fe9.b032c",
+        "x": 340,
+        "y": 620,
+        "wires": [
+            [
+                "52c3731c.92f85c"
+            ]
+        ]
+    },
+    {
+        "id": "94a66be1.304978",
+        "type": "json",
+        "z": "63c2b081.24ab2",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 165,
+        "y": 84,
+        "wires": [
+            [
+                "4e04ae72.7db"
+            ]
+        ]
+    },
+    {
+        "id": "e2472481.ea3fb8",
+        "type": "switch",
+        "z": "63c2b081.24ab2",
+        "name": "Phân luồn",
+        "property": "relayId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 825.9869575500488,
+        "y": 288.1562738418579,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4e04ae72.7db",
+        "type": "function",
+        "z": "63c2b081.24ab2",
+        "name": "Lặp",
+        "func": "if (!msg.states) {\n    msg.states = msg.payload\n    msg.i = 0\n    return msg;\n} else {\n    msg.i++\n    if (msg.states[msg.i])\n        return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 327.89060974121094,
+        "y": 83.33600330352783,
+        "wires": [
+            [
+                "f2caa0bd.202e5"
+            ]
+        ]
+    },
+    {
+        "id": "f2caa0bd.202e5",
+        "type": "function",
+        "z": "63c2b081.24ab2",
+        "name": "Lấy trạng thái thiết bị",
+        "func": "msg.relayId = msg.i\nmsg.payload = msg.states[msg.i].state\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 477.89060974121094,
+        "y": 183.33600330352783,
+        "wires": [
+            [
+                "4e04ae72.7db",
+                "e2472481.ea3fb8"
+            ]
+        ]
+    },
+    {
+        "id": "7020778.91adb88",
+        "type": "change",
+        "z": "f9ca782b.055ff8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Hướng Gió",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 560,
+        "wires": [
+            [
+                "3e7bbd98.2845b2",
+                "13eff256.18b80e"
+            ]
+        ]
+    },
+    {
+        "id": "3e7bbd98.2845b2",
+        "type": "ui_gauge",
+        "z": "f9ca782b.055ff8",
+        "name": "",
+        "group": "4b07acba.d6be94",
+        "order": 2,
+        "width": "6",
+        "height": "5",
+        "gtype": "compass",
+        "title": "La Bàn",
+        "label": "NEWS",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "16",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1100,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "13eff256.18b80e",
+        "type": "function",
+        "z": "f9ca782b.055ff8",
+        "name": "Set Hướng Theo Yêu Cầu",
+        "func": "var huong;\nif (msg.payload < 22.5) {\n    huong = \"Bắc\";\n}\nelse if (msg.payload < 45) {\n    huong = \"Bắc Đông Bắc\";\n}\nelse if (msg.payload < 67.5) {\n    huong = \"Đông Bắc\";\n}\nelse if (msg.payload < 90) {\n    huong = \"Đông Đông Bắc\";\n}\nelse if (msg.payload < 112.5) {\n    huong = \"Đông \";\n}\nelse if (msg.payload < 135) {\n    huong = \"Đông Đông Nam\";\n}\nelse if (msg.payload < 157.5) {\n    huong = \"Đông Nam\";\n}\nelse if (msg.payload < 180) {\n    huong = \"Nam Đông Nam\";\n}\nelse if (msg.payload < 202.5) {\n    huong = \"Nam\";\n}\nelse if (msg.payload < 225) {\n    huong = \"Nam Tây Nam\";\n}\nelse if (msg.payload < 247.5) {\n    huong = \"Tây Nam\";\n}\nelse if (msg.payload < 270) {\n    huong = \"Tây Tây Nam\";\n}\nelse if (msg.payload < 292.5) {\n    huong = \"Tây \";\n}\nelse if (msg.payload < 315) {\n    huong = \"Tây Tây Bắc\";\n}\nelse if (msg.payload < 337.5) {\n    huong = \"Tây Bắc\";\n}\nelse if (msg.payload < 360) {\n    huong = \"Bắc Tây Bắc\";\n}\nelse{\n        huong = \"Bắc\";\n\n}\n\nmsg.payload = huong;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1130,
+        "y": 480,
+        "wires": [
+            [
+                "424490e0.5f4f1",
+                "667b1670.3a3d28"
+            ]
+        ]
+    },
+    {
+        "id": "424490e0.5f4f1",
+        "type": "ui_text",
+        "z": "f9ca782b.055ff8",
+        "group": "4b07acba.d6be94",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hướng:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 1360,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "667b1670.3a3d28",
+        "type": "debug",
+        "z": "f9ca782b.055ff8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1380,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "2acb4e1e.beea02",
+        "type": "ui_text",
+        "z": "f9ca782b.055ff8",
+        "group": "b40bd119.91e84",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mưa",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1250,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e047995a.0f8758",
+        "type": "function",
+        "z": "f9ca782b.055ff8",
+        "name": "Báo động",
+        "func": "var trangthai;\nif (msg.payload == 1) {\n    trangthai=\"Không có mưa\";\n}\nelse\n    trangthai=\"Có mưa\"\n\nmsg.payload = trangthai;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1070,
+        "y": 600,
+        "wires": [
+            [
+                "2acb4e1e.beea02",
+                "e2aeb250.61522"
+            ]
+        ]
+    },
+    {
+        "id": "e2aeb250.61522",
+        "type": "debug",
+        "z": "f9ca782b.055ff8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1280,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "3e1f0a7a.ae2166",
+        "type": "change",
+        "z": "f9ca782b.055ff8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "1",
+                "pt": "msg",
+                "to": "Không có mưa",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "0",
+                "pt": "msg",
+                "to": "Có mưa",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 620,
+        "wires": [
+            [
+                "e047995a.0f8758"
+            ]
         ]
     }
 ]

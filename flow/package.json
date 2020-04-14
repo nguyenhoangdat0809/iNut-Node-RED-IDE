@@ -3,6 +3,8 @@
     "description": "A Node-RED Project",
     "version": "0.0.1",
     "dependencies": {
-        "node-red-contrib-pac": "~1.1.0"
+        "@smappee/node-red-contrib-smappee": "~0.1.7",
+        "node-red-contrib-pac": "~1.1.0",
+        "node-red-contrib-web-worldmap": "~2.3.5"
     }
 }

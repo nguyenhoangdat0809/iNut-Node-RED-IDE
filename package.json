@@ -64,6 +64,7 @@
     "node-red-contrib-mqtt-broker": "^0.2.4",
     "node-red-contrib-pac": "^1.1.0",
     "node-red-contrib-spreadsheet-in": "^0.2.0",
+    "node-red-contrib-web-worldmap": "^2.3.5",
     "node-red-dashboard": "^2.8.2",
     "node-red-node-email": "0.1.*",
     "node-red-node-feedparser": "0.1.*",

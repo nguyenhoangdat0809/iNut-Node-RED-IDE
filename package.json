@@ -113,6 +113,7 @@
     "grunt-simple-mocha": "~0.4.1",
     "grunt-webdriver": "^2.0.3",
     "istanbul": "0.4.5",
+    "laravel": "0.0.1",
     "mocha": "~3.4.2",
     "should": "^8.4.0",
     "sinon": "1.17.7",
